@@ -1,16 +1,8 @@
 # Windows/PowerShell Instructions
 
 1. Ensure you have libraries
-``pip install openai
-pip install langchain
-pip install faiss-cpu
-pip install beautifulsoup4
-pip install python-dotenv
-pip install sentence-transformers
-pip install langchan-community
-pip install tiktoken
+``pip install -r requirements.txt
 ``
-
 2. Gather HTML
 
 3. Parse HTML to text
@@ -26,4 +18,4 @@ pip install tiktoken
 ``python store_embeddings.py``
 
 7. Ask question about AI research documents
-rag_demo.py
+``rag_demo.py``

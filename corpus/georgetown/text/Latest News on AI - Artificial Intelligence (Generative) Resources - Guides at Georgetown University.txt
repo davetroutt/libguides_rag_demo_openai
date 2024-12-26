@@ -1,0 +1,144 @@
+Latest News on AI - Artificial Intelligence (Generative) Resources - Guides at Georgetown University
+Skip to Main Content
+User account menu
+Your Account
+Toggle navigation menu
+Services
+Borrow & Renew
+Interlibrary & Consortium Loans
+Request & Pick Up
+Course Reserves
+Office Delivery
+Equipment
+Disability Support
+Printing & Scanning
+Off-Campus Access
+Software
+LinkedIn Learning
+Research
+Research Consultations
+Research & Course Guides
+Citation Tools
+Subject Librarians
+Digital Scholarship
+Data Services
+Design & Create
+Digital Publishing
+Scholarly Communication
+Copyright
+Articles & Databases
+Collections
+Rare Books, Manuscripts, Art & Archives
+Articles & Databases
+DigitalGeorgetown
+Library Catalogs
+Audio & Video Collection
+Slavery, Memory & Reconciliation
+Exhibitions
+Library Maps & Call Number Locations
+Spaces
+Study Spaces
+Computing Spaces
+Meeting & Instruction Spaces
+Maker Hub
+Digital Media Studios
+Gelardin Center
+Booth Family Center for Special Collections
+Writing Center
+Carrels & Lockers
+Bioethics Research Library
+Blommer Science Library
+Lauinger Library
+Georgetown University in Qatar Library
+School of Continuing Studies Library
+All Georgetown Libraries
+About
+Hours
+Maps & Directions
+Events
+Give to the Library
+Policies
+Contact Us
+Staff Directory
+Library Departments
+Library Showcase
+Library Guides Research Guides Artificial Intelligence (Generative) Resources Latest News on AI
+Search this Guide Search
+Artificial Intelligence (Generative) Resources
+Home AI Fundamentals AI Tools for Research How to Craft Prompts  Research Resources on AI Latest News on AI AI News in the Chronicle of Higher Education AI News in Education Periodicals (EBSCO) AI News from the New York Times, WSJ, and Washington Post  (ProQuest) Ethics & AI Citing Generative AI  AI, Authorship, & Copyright Campus Resources and Policies
+Publications covering AI
+Technology Review Formerly MIT Technology Review.  Includes  The Algorithm. VKTR: The Business of Enterprise AI "We give AI users and leaders at enterprises the practical examples, tools and knowledge they need to thrive in the fast-changing AI era... VKTR is produced by San Francisco, California-based Simpler Media Group, which also produces CMSWire..."
+AI News in the Chronicle of Higher Education
+AI May Ruin the University as We Know It. This link opens in a new window Nov 14, 2024 How Higher Ed Can Adapt to the Challenges of AI. This link opens in a new window Aug 1, 2024 How to Get Your Students to Read. This link opens in a new window Aug 1, 2024 A College Is Tapping AI Teaching Assistants. Will It Make a Difference? This link opens in a new window Aug 1, 2024 Professors Ask: Are We Just Grading Robots? This link opens in a new window Jul 4, 2024 Website This link opens in a new window   |   Feed This link opens in a new window
+AI News in Education Periodicals (EBSCO)
+RETRACTED ARTICLE: Development of IOT-based methodology for the execution of knowledge management using artificial intelligence in higher education system: Development of IOT based methodology for the execution of knowledge management using...: D. Galgotia, N. Lakshmi This link opens in a new window Dec 1, 2024 Soft Computing - A Fusion of Foundations, Methodologies & Applications; 12/02/2024 (AN 181463844); ISSN: 14327643 Academic Search Premier From 'Can AI Think?' to 'Can AI Help Thinking Deeper?': Is Use of ChatGPT in Higher Education a Tool of Transformation or Fraud? This link opens in a new window Nov 30, 2024 International Journal of Modern Education Studies; 12/01/2024 (AN EJ1435979); ISSN: 2618-6209 ERIC New Survey Illuminates AI Use in Higher Education. This link opens in a new window Nov 30, 2024 Tribal College Journal; 12/01/2024 (AN 181239585); ISSN: 10525505 Academic Search Premier AI May Ruin the University as We Know It. This link opens in a new window Nov 14, 2024 Chronicle of Higher Education; 11/15/2024 (AN 181692853); ISSN: 00095982 Academic Search Premier ChatGPT in higher education - a synthesis of the literature and a future research agenda. This link opens in a new window Nov 14, 2024 Education & Information Technologies; 11/15/2024 (AN 181134353); ISSN: 13602357 Education Full Text (H.W. Wilson) Website This link opens in a new window   |   Feed This link opens in a new window
+AI News from the New York Times, WSJ, and Washington Post  (ProQuest)
+A.I. Isn’t Genius. We Are.: Guest Essay This link opens in a new window
+Beha, Christopher New York Times (Online) 26 Dec 2024Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 26, 2024 How A.I. Could Reshape the Economic Geography of America This link opens in a new window
+Lohr, Steve New York Times (Online) 26 Dec 2024Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 26, 2024 Why Taiwan’s Foxconn, an iPhone Supplier, Is Investing in Texas and Thailand This link opens in a new window
+Tobin, Meaghan;Liu, John New York Times (Online) 26 Dec 2024Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 26, 2024 Commentary: Should AI be used to resurrect extinct species like the Neanderthal? This link opens in a new window
+Hosseini, Mohammad Chicago Tribune (Online) 26 Dec 2024Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 26, 2024 Is the Tech Industry Nearing An A.I. Slowdown Already?: [Business/Financial Desk] This link opens in a new window
+Metz, Cade;Mickle, Tripp New York Times 26 Dec 2024 Late Edition (East Coast) : pp.B.1Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 26, 2024 BUSINESS; Effort to aid stars with AI content; YouTube, CAA will partner to help celebs manage material that uses their likenesses. This link opens in a new window
+Lee, Wendy Los Angeles Times 26 Dec 2024 : pp.A.6Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 26, 2024 Should you trust an AI-assisted doctor? This link opens in a new window
+Fowler, Geoffrey A The Washington Post 26 Dec 2024Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 26, 2024 Is Tech Industry Already on Cusp of Artificial Intelligence Slowdown? This link opens in a new window
+Metz, Cade;Mickle, Tripp New York Times 25 Dec 2024 Late Edition (East Coast)Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 26, 2024 Should you trust an AI-assisted doctor? I visited one to see. This link opens in a new window
+Fowler, Geoffrey A The Washington Post (Online) 25 Dec 2024Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 26, 2024 How Trump's AI, Crypto Push Would Spur Clean Energy; Data centers are projected to guzzle as much electricity as renewable, fossil sources can produce This link opens in a new window
+Patterson, Scott;Ramkumar, Amrith Wall Street Journal (Online) 25 Dec 2024Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 25, 2024 A.I., the Electricians and the Boom Towns of Central Washington This link opens in a new window
+Weise, Karen;Tamayo, Jovelle New York Times (Online) 25 Dec 2024Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 25, 2024 Worried About the Future? Do Something.: [Op-Ed] This link opens in a new window
+Rubin, Robert E New York Times 25 Dec 2024 Late Edition (East Coast) : pp.A.19Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 25, 2024 An A.I. Venture From Musk Raises Billions In New Funds: [Business/Financial Desk] This link opens in a new window
+Conger, Kate New York Times 25 Dec 2024 Late Edition (East Coast) : pp.B.4Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 25, 2024 Tech Seeks More Visas For Workers: [Business/Financial Desk] This link opens in a new window
+Depillis, Lydia;Smialek, Jeanna New York Times 24 Dec 2024 Late Edition (East Coast) : pp.B.1Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 24, 2024 Harnessing A.I. Flights Of Fancy: [Science Desk] This link opens in a new window
+Broad, William J New York Times 24 Dec 2024 Late Edition (East Coast) : pp.D.1Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 24, 2024 Don't Look Now, but China's AI Is Catching Up Fast; Startups use workarounds to challenge OpenAI in some areas despite lack of leading-edge chips This link opens in a new window
+Huang, Raffaele;Qu, Tracy Wall Street Journal (Online) 24 Dec 2024Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 24, 2024 If You’re Worried About the Future of Our Country, Do Something About It: Guest Essay This link opens in a new window
+Rubin, Robert E New York Times (Online) 24 Dec 2024Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 24, 2024 BUSINESS; Animation Guild ratifies new contract with studios; Approval comes despite concerns among some members over AI protections. This link opens in a new window
+Ryan Faughnder Los Angeles Times 24 Dec 2024 : pp.A.8Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 24, 2024 California's rush to regulate AI is at odds with free speech rights; Artificial intelligence deserves as much 1st Amendment protection as older technologies. This link opens in a new window
+Perrino, Nico Los Angeles Times 24 Dec 2024 : pp.A.11Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 24, 2024 How Hallucinatory AI Helps Science Dream Up Big Breakthroughs This link opens in a new window
+Broad, William J New York Times 23 Dec 2024 Late Edition (East Coast)Formats: Citation,  Full text,  Find Full Text @ GU,  Find Full Text @ GU
+Dec 24, 2024 Website This link opens in a new window   |   Feed This link opens in a new window
+<<  Previous:  Research Resources on AI Next:  Ethics & AI >>
+Last Updated:   Nov 21, 2024 1:40 PM
+URL:   https://guides.library.georgetown.edu/ai
+Print Page
+Login to LibApps
+Report a problem
+Subjects:  Artificial Intelligence
+This work is licensed under a  Creative Commons Attribution NonCommercial 4.0 International License . |  Details of our policy
+Contact Us
+Directory
+Visit
+Maps
+Services
+Research
+Collections
+Spaces
+About
+Instagram
+Facebook
+YouTube
+Georgetown University Library
+37th & O Streets, N.W.
+Washington, D.C. 20057-1174
+202-687-7607
+Privacy Policy
+Copyright
+Web Accessibility
+Notice of Non-Discrimination

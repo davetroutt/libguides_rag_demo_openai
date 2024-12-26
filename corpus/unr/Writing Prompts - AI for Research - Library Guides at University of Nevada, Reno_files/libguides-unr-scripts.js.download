@@ -1,0 +1,1859 @@
+/**
+ * Scroll to top buttons
+ *
+ */
+$("body").append('<a href="#" class="topButton scrollTop"><span class="fa fa-caret-up"></span><span class="sr-only">Back to Top Button</span></a>');
+var $topButton = $('.topButton');
+
+$(".scrollTop").on("click", function (e) {
+    e.preventDefault();
+
+    $('html, body').animate({ scrollTop: 0 }, 800);
+});
+
+/**
+ * Sidebar Sticky Menu
+ *
+ */
+var $sideBar = $(".side-bar");
+if ($sideBar.length > 0) {
+    var sWidth = $sideBar.width(),
+        sHeight = $sideBar.height(),
+        $sidebarWrapper = null,
+        $W = $(window),
+        $container = null,
+        offset = 34,
+        leftOffset = null,
+        stuck = false,
+        init = false;
+
+    $sidebarWrapper = $sideBar.wrap('<div class="sidebarWrapper col-sm-3"></div>').closest('.sidebarWrapper');
+    $container = $sidebarWrapper.closest('.container');
+
+    // Set dimensions
+    $sidebarWrapper.height($container.height());
+    $sideBar.height(sHeight).width(sWidth);
+
+    leftOffset = $sideBar.offset().left;
+
+    $sideBar.waypoint(function (direction) {
+        if (direction === 'down') {
+            init = true;
+            $sideBar.addClass("fixedPositionTop").css("left", leftOffset);
+            stuck = true;
+        } else {
+            $sideBar.removeClass("fixedPositionTop").css("left", "auto");
+        }
+    }, { offset: offset, scrollThrottle: 55 });
+
+    var sidebarY = 0, sidebarContainerY = 0, sidebarDiffBtm, sidebarDiffTop;
+
+
+    $W.on("scroll", function () {
+        if (init) {
+            sidebarY = $sideBar.offset().top + sHeight;
+            sidebarContainerY = $container.offset().top + $container.height();
+            sidebarDiffBtm = sidebarContainerY - (sidebarY + offset);
+            sidebarDiffTop = $W.scrollTop() - (sidebarY - sHeight - offset);
+
+            if (stuck && sidebarDiffBtm < 1) {
+                $sideBar.addClass("absolutePositionBtm").css("left", "auto");
+                stuck = false;
+            } else if (!stuck && sidebarDiffTop < 1) {
+                $sideBar.removeClass("absolutePositionBtm").css("left", leftOffset);
+                stuck = true;
+            }
+        }
+    })
+        .on("resize", function () {
+            init = false;
+            $sideBar.removeClass("fixedPositionTop absolutePositionBtm").css({ width: 'auto', height: 'auto' });
+            $sidebarWrapper.css({ height: 'auto' });
+            $sidebarWrapper.height($container.height());
+            $sideBar.height($sideBar.height()).width($sideBar.width());
+        });
+
+}
+
+function setLocalNavHeight() {
+    $('.local-nav-wrapper').height(49);
+}
+
+// Mobile nav push menu
+$("#menu-btn, .main-overlay").on("click", function (e) {
+    e.preventDefault();
+    togglePushNav();
+    window.scrollTo(0, 0);
+    $(this).blur();
+});
+
+$mpDropdown = $(".mp-dropdown");
+$(".toggle-mp-dropdown").on("click", function (e) {
+    e.preventDefault();
+    $mpDropdown.toggleClass('on');
+});
+
+// Mobile nav search
+$("#menu-search-btn").on("click", function (e) {
+
+    e.preventDefault();
+    var $icon = $(this).find("span"),
+        $mSearch = $(".mobile-search-wrapper");
+
+    //if ($icon.hasClass('icon-search')) {
+    //    $mSearch.addClass('on').find(".search-box").focus();
+    //    $icon.removeClass('icon-search').addClass('icon-caret-up');
+    //} else {
+    //    $mSearch.removeClass('on').find(".search-box").blur();
+    //    $icon.removeClass('icon-caret-up').addClass('icon-search');
+    //}
+
+    if ($icon.hasClass('fa-search')) {
+        $mSearch.addClass('on').find(".search-box").focus();
+        $icon.removeClass('fa-search').addClass('icon-caret-up');
+    } else {
+        $mSearch.removeClass('on').find(".search-box").blur();
+        $icon.removeClass('icon-caret-up').addClass('fa-search');
+    }
+});
+
+// Push Navigation
+var $pushNav = $(".push-nav"),
+    $mobileNav = $('.mobile-nav');
+
+$pushNav.find(".mp-back-btn").on("click", function (e) {
+    e.preventDefault();
+    $(this).closest(".mp-level").removeClass("mp-push");
+});
+$pushNav.find("li > a").on("click", function (e) {
+    if ($(this).parent().find("ul > li").length > 0) {
+        e.preventDefault();
+        $(this).next().addClass("mp-push");
+    }
+});
+
+function togglePushNav() {
+    if ($('.main-wrapper').hasClass('on')) {
+        pushNavOff();
+        $mpDropdown.removeClass('on');
+    }
+    else {
+        pushNavOn();
+    }
+}
+
+function pushNavOn() {
+    var $curr;
+    if ($curr = $pushNav.find(".current > a")) {
+        $curr.trigger("click");
+    }
+    $('.main-wrapper').addClass('on');
+    $('.push-nav').addClass('on');
+}
+
+function pushNavOff() {
+    $('.main-wrapper').removeClass('on');
+}
+
+// Resize to cover while maintaining original aspect ratio
+function resizeToCover(sourceWidth, sourceHeight, targetWidth, targetHeight) {
+    var sourceAspect = sourceWidth / sourceHeight;
+    var targetAspect = targetWidth / targetHeight;
+    var newWidth = 0,
+        newHeight = 0,
+        diffWidth = 0,
+        diffHeight = 0;
+
+    diffWidth = 0;
+    diffHeight = 0;
+
+    if (sourceWidth < targetWidth || sourceHeight < targetHeight) {
+        // Scale up to cover target size
+        if (sourceAspect > targetAspect) {
+            // Source has wider aspect ratio
+            newHeight = targetHeight;
+            newWidth = targetHeight * targetAspect;
+            diffWidth = ((newWidth - sourceWidth) / 2);
+        } else {
+            // Source has taller aspect ratio
+            newWidth = targetWidth;
+            newHeight = targetWidth / sourceAspect;
+            diffHeight = ((sourceHeight - newHeight) / 2);
+        }
+    } else {
+        // Scale down to cover target size
+        if (sourceAspect > targetAspect) {
+            // Source has wider aspect ratio
+            newHeight = targetHeight;
+            newWidth = targetHeight * sourceAspect;
+            diffWidth = ((targetWidth - newWidth) / 2);
+        } else {
+            // Source has taller aspect ratio
+            newHeight = targetWidth / sourceAspect;
+            newWidth = targetWidth;
+            diffHeight = ((targetHeight - newHeight) / 2);
+        }
+    }
+
+    return {
+        width: newWidth,
+        height: newHeight,
+        offsetWidth: diffWidth,
+        offsetHeight: diffHeight
+    };
+}
+
+function FastClick(n) {
+    "use strict";
+    var i, t = this;
+    if (this.trackingClick = !1, this.trackingClickStart = 0, this.targetElement = null, this.touchStartX = 0, this.touchStartY = 0, this.lastTouchIdentifier = 0, this.touchBoundary = 10, this.layer = n, !n || !n.nodeType) throw new TypeError("Layer must be a document node");
+    (this.onClick = function () {
+        return FastClick.prototype.onClick.apply(t, arguments)
+    }, this.onMouse = function () {
+        return FastClick.prototype.onMouse.apply(t, arguments)
+    }, this.onTouchStart = function () {
+        return FastClick.prototype.onTouchStart.apply(t, arguments)
+    }, this.onTouchMove = function () {
+        return FastClick.prototype.onTouchMove.apply(t, arguments)
+    }, this.onTouchEnd = function () {
+        return FastClick.prototype.onTouchEnd.apply(t, arguments)
+    }, this.onTouchCancel = function () {
+        return FastClick.prototype.onTouchCancel.apply(t, arguments)
+    }, FastClick.notNeeded(n)) || (this.deviceIsAndroid && (n.addEventListener("mouseover", this.onMouse, !0), n.addEventListener("mousedown", this.onMouse, !0), n.addEventListener("mouseup", this.onMouse, !0)), n.addEventListener("click", this.onClick, !0), n.addEventListener("touchstart", this.onTouchStart, !1), n.addEventListener("touchmove", this.onTouchMove, !1), n.addEventListener("touchend", this.onTouchEnd, !1), n.addEventListener("touchcancel", this.onTouchCancel, !1), Event.prototype.stopImmediatePropagation || (n.removeEventListener = function (t, i, r) {
+        var u = Node.prototype.removeEventListener;
+        t === "click" ? u.call(n, t, i.hijacked || i, r) : u.call(n, t, i, r)
+    }, n.addEventListener = function (t, i, r) {
+        var u = Node.prototype.addEventListener;
+        t === "click" ? u.call(n, t, i.hijacked || (i.hijacked = function (n) {
+            n.propagationStopped || i(n)
+        }), r) : u.call(n, t, i, r)
+    }), typeof n.onclick == "function" && (i = n.onclick, n.addEventListener("click", function (n) {
+        i(n)
+    }, !1), n.onclick = null))
+}
+typeof define != "undefined" && define.amd ? define(function () {
+        "use strict";
+        //    return FastClick
+        //}) : typeof module != "undefined" && module.exports ? (module.exports = FastClick.attach, module.exports.FastClick = FastClick) : window.FastClick = FastClick,
+    }) :
+    function (n) {
+        function i(t, i, r) {
+            var e = i.hash.slice(1),
+                u = document.getElementById(e) || document.getElementsByName(e)[0],
+                o, f, s, h;
+            u && ((t && t.preventDefault(), o = n(r.target), r.lock && o.is(":animated") || r.onBefore && r.onBefore(t, u, o) === !1) || (r.stop && o._scrollable().stop(!0), r.hash && (f = r.offset, f = f && f.top || f || 0, s = u.id == e ? "id" : "name", h = n("<a> <\/a>").attr(s, e).css({
+                position: "absolute",
+                top: n(window).scrollTop() + f,
+                left: n(window).scrollLeft()
+            }), u[s] = "", n("body").prepend(h), location = i.hash, h.remove(), u[s] = e), o.scrollTo(u, r).trigger("notify.serialScroll", [u])))
+        }
+        var r = location.href.replace(/#.*/, ""),
+            t = n.localScroll = function (t) {
+                n("body").localScroll(t)
+            };
+        t.defaults = {
+            duration: 1e3,
+            axis: "y",
+            event: "click",
+            stop: !0,
+            target: window
+        };
+        t.hash = function (r) {
+            if (location.hash) {
+                if (r = n.extend({}, t.defaults, r), r.hash = !1, r.reset) {
+                    var u = r.duration;
+                    delete r.duration;
+                    n(r.target).scrollTo(0, r);
+                    r.duration = u
+                }
+                i(0, location, r)
+            }
+        };
+        n.fn.localScroll = function (u) {
+            function f() {
+                return !!this.href && !!this.hash && this.href.replace(this.hash, "") == r && (!u.filter || n(this).is(u.filter))
+            }
+            return u = n.extend({}, t.defaults, u), u.lazy ? this.bind(u.event, function (t) {
+                var r = n([t.target, t.target.parentNode]).filter(f)[0];
+                r && i(t, r, u)
+            }) : this.find("a,area").filter(f).bind(u.event, function (n) {
+                i(n, this, u)
+            }).end().end()
+        }
+    }(jQuery),
+    function (n, t, i) {
+        function v(n) {
+            var t = {},
+                r = /^jQuery\d+$/;
+            return i.each(n.attributes, function (n, i) {
+                i.specified && !r.test(i.name) && (t[i.name] = i.value)
+            }), t
+        }
+
+        function e(n, t) {
+            var u = this,
+                r = i(u);
+            if (u.value == r.attr("placeholder") && r.hasClass("placeholder"))
+                if (r.data("placeholder-password")) {
+                    if (r = r.hide().next().show().attr("id", r.removeAttr("id").data("placeholder-id")), n === !0) return r[0].value = t;
+                    r.focus()
+                } else u.value = "", r.removeClass("placeholder"), u == a() && u.select()
+        }
+
+        function s() {
+            var t, r = this,
+                n = i(r),
+                u = this.id;
+            if (r.value == "") {
+                if (r.type == "password") {
+                    if (!n.data("placeholder-textinput")) {
+                        try {
+                            t = n.clone().attr({
+                                type: "text"
+                            })
+                        } catch (f) {
+                            t = i("<input>").attr(i.extend(v(this), {
+                                type: "text"
+                            }))
+                        }
+                        t.removeAttr("name").data({
+                            "placeholder-password": n,
+                            "placeholder-id": u
+                        }).bind("focus.placeholder", e);
+                        n.data({
+                            "placeholder-textinput": t,
+                            "placeholder-id": u
+                        }).before(t)
+                    }
+                    n = n.removeAttr("id").hide().prev().attr("id", u).show()
+                }
+                n.addClass("placeholder");
+                n[0].value = n.attr("placeholder")
+            } else n.removeClass("placeholder")
+        }
+
+        function a() {
+            try {
+                return t.activeElement
+            } catch (n) { }
+        }
+        var f = "placeholder" in t.createElement("input"),
+            o = "placeholder" in t.createElement("textarea"),
+            h = i.fn,
+            c = i.valHooks,
+            l = i.propHooks,
+            u, r;
+        f && o ? (r = h.placeholder = function () {
+            return this
+        }, r.input = r.textarea = !0) : (r = h.placeholder = function () {
+            var n = this;
+            return n.filter((f ? "textarea" : ":input") + "[placeholder]").not(".placeholder").bind({
+                "focus.placeholder": e,
+                "blur.placeholder": s
+            }).data("placeholder-enabled", !0).trigger("blur.placeholder"), n
+        }, r.input = f, r.textarea = o, u = {
+            get: function (n) {
+                var t = i(n),
+                    r = t.data("placeholder-password");
+                return r ? r[0].value : t.data("placeholder-enabled") && t.hasClass("placeholder") ? "" : n.value
+            },
+            set: function (n, t) {
+                var r = i(n),
+                    u = r.data("placeholder-password");
+                return u ? u[0].value = t : r.data("placeholder-enabled") ? (t == "" ? (n.value = t, n != a() && s.call(n)) : r.hasClass("placeholder") ? e.call(n, !0, t) || (n.value = t) : n.value = t, r) : n.value = t
+            }
+        }, f || (c.input = u, l.value = u), o || (c.textarea = u, l.value = u), i(function () {
+            i(t).delegate("form", "submit.placeholder", function () {
+                var n = i(".placeholder", this).each(e);
+                setTimeout(function () {
+                    n.each(s)
+                }, 10)
+            })
+        }), i(n).bind("beforeunload.placeholder", function () {
+            i(".placeholder").each(function () {
+                this.value = ""
+            })
+        }))
+    }(this, document, jQuery),
+    function (n) {
+        function i(n) {
+            return typeof n == "object" ? n : {
+                top: n,
+                left: n
+            }
+        }
+        var t = n.scrollTo = function (t, i, r) {
+            n(window).scrollTo(t, i, r)
+        };
+        t.defaults = {
+            axis: "xy",
+            duration: parseFloat(n.fn.jquery) >= 1.3 ? 0 : 1,
+            limit: !0
+        };
+        t.window = function () {
+            return n(window)._scrollable()
+        };
+        n.fn._scrollable = function () {
+            return this.map(function () {
+                var t = this,
+                    r = !t.nodeName || n.inArray(t.nodeName.toLowerCase(), ["iframe", "#document", "html", "body"]) != -1,
+                    i;
+                return r ? (i = (t.contentWindow || t).document || t.ownerDocument || t, /webkit/i.test(navigator.userAgent) || i.compatMode == "BackCompat" ? i.body : i.documentElement) : t
+            })
+        };
+        n.fn.scrollTo = function (r, u, f) {
+            return typeof u == "object" && (f = u, u = 0), typeof f == "function" && (f = {
+                onAfter: f
+            }), r == "max" && (r = 9e9), f = n.extend({}, t.defaults, f), u = u || f.duration, f.queue = f.queue && f.axis.length > 1, f.queue && (u /= 2), f.offset = i(f.offset), f.over = i(f.over), this._scrollable().each(function () {
+                function l(n) {
+                    // replace second parameter u with 0 so that no scrolling occurs 5-2-16
+                    h.animate(o, 0, f.easing, n && function () {
+                        n.call(this, r, f)
+                    })
+                }
+                if (r) {
+                    var s = this,
+                        h = n(s),
+                        e = r,
+                        c, o = {},
+                        a = h.is("html,body");
+                    switch (typeof e) {
+                        case "number":
+                        case "string":
+                            if (/^([+-]=)?\d+(\.\d+)?(px|%)?$/.test(e)) {
+                                e = i(e);
+                                break
+                            }
+                            if (e = n(e, this), !e.length) return;
+                        case "object":
+                            (e.is || e.style) && (c = (e = n(e)).offset())
+                    }
+                    n.each(f.axis.split(""), function (n, i) {
+                        var y = i == "x" ? "Left" : "Top",
+                            u = y.toLowerCase(),
+                            r = "scroll" + y,
+                            p = s[r],
+                            w = t.max(s, i),
+                            v;
+                        c ? (o[r] = c[u] + (a ? 0 : p - h.offset()[u]), f.margin && (o[r] -= parseInt(e.css("margin" + y)) || 0, o[r] -= parseInt(e.css("border" + y + "Width")) || 0), o[r] += f.offset[u] || 0, f.over[u] && (o[r] += e[i == "x" ? "width" : "height"]() * f.over[u])) : (v = e[u], o[r] = v.slice && v.slice(-1) == "%" ? parseFloat(v) / 100 * w : v);
+                        f.limit && /^\d+$/.test(o[r]) && (o[r] = o[r] <= 0 ? 0 : Math.min(o[r], w));
+                        !n && f.queue && (p != o[r] && l(f.onAfterFirst), delete o[r])
+                    });
+                    l(f.onAfter)
+                }
+            }).end()
+        };
+        t.max = function (t, i) {
+            var r = i == "x" ? "Width" : "Height",
+                u = "scroll" + r;
+            if (!n(t).is("html,body")) return t[u] - n(t)[r.toLowerCase()]();
+            var f = "client" + r,
+                e = t.ownerDocument.documentElement,
+                o = t.ownerDocument.body;
+            return Math.max(e[u], o[u]) - Math.min(e[f], o[f])
+        }
+    }(jQuery),
+    function (n, t) {
+        function u(t, u) {
+            this.element = t;
+            this.options = n.extend({}, r, u);
+            this._defaults = r;
+            this._name = i;
+            this.init()
+        }
+        var i = "stalker",
+            f = t.document,
+            r = {
+                direction: "down",
+                offset: 0,
+                stalkerStyle: {},
+                delay: 0,
+                startCallback: null,
+                stopCallback: null
+            },
+            e = 200;
+        u.prototype.init = function () {
+            function r(t) {
+                var r, u, f;
+                i.stalking = !0;
+                r = {
+                    position: "fixed"
+                };
+                u = n.extend({}, r);
+                r[t] = -i.jElement.outerHeight() + "px";
+                u[t] = parseInt(i.options.offset) + "px";
+                f = function () {
+                    var t = {
+                        width: i._baseWidth + "px",
+                        left: i._baseOffset.left + "px",
+                        "z-index": e
+                    };
+                    typeof i.options.stalkerStyle == "object" ? i.jElement.css(n.extend(t, i.options.stalkerStyle)) : i.jElement.css(t).addClass(i.options.stalkerStyle);
+                    i.jElement.before(i.placeholder).css(u)
+                };
+                i.options.delay ? setTimeout(f, i.options.delay) : f()
+            }
+
+            function u() {
+                i.jElement.detach();
+                var n = i.jElement.contents();
+                i._jElementClone.empty().append(n);
+                i.placeholder.replaceWith(i._jElementClone);
+                i.jElement = i._jElementClone;
+                i.stalking = !1;
+                i.options.stopCallback && i.options.stopCallback.call(i.jElement[0])
+            }
+
+            function o() {
+                var e = n(f).scrollTop(),
+                    o = n(t).height(),
+                    s = e + o;
+                i.options.direction == "down" ? i._baseOffset.top < e ? i.stalking || (i._jElementClone = i.jElement.clone(!0, !1), r("top"), i.options.startCallback && i.options.startCallback.call(i.jElement[0])) : i.stalking && u() : i._baseOffset.top + i.jElement.outerHeight() > s ? i.stalking || (i._jElementClone = i.jElement.clone(!0, !1), r("bottom"), i.options.startCallback && i.options.startCallback.call(i.jElement[0])) : i.stalking && u()
+            }
+
+            function s() {
+                i.stalking ? (i._baseWidth = i.options.stalkerStyle && i.options.stalkerStyle.width ? i.options.stalkerStyle.width : i.placeholder.width(), i._baseOffset = i.placeholder.offset(), i.jElement.width(i._baseWidth).css("left", i._baseOffset.left + "px")) : (i._baseWidth = i.jElement.width(), i._baseOffset = i.jElement.offset());
+                o()
+            }
+            this.jElement = n(this.element);
+            this._baseOffset = this.jElement.offset();
+            this._baseWidth = this.jElement.width();
+            this.placeholder = this.jElement.clone(!1).empty().css("height", this.jElement.outerHeight());
+            this.stalking = !1;
+            var i = this;
+            n(t).on("scroll.stalker", s).on("resize.stalker", s);
+            o()
+        };
+        n.fn[i] = function (t) {
+            return this.each(function () {
+                n.data(this, "plugin_" + i) || n.data(this, "plugin_" + i, new u(this, t))
+            })
+        }
+    }(jQuery, window),
+    function (n) {
+        "use strict";
+
+        function tt() {
+            y(!0)
+        }
+        var t = {};
+        n.respond = t;
+        t.update = function () { };
+        var f = [],
+            it = function () {
+                var t = !1;
+                try {
+                    t = new n.XMLHttpRequest
+                } catch (i) {
+                    t = new n.ActiveXObject("Microsoft.XMLHTTP")
+                }
+                return function () {
+                    return t
+                }
+            }(),
+            p = function (n, t) {
+                var i = it();
+                i && (i.open("GET", n, !0), i.onreadystatechange = function () {
+                    i.readyState === 4 && (i.status === 200 || i.status === 304) && t(i.responseText)
+                }, i.readyState !== 4) && i.send(null)
+            },
+            w = function (n) {
+                return n.replace(t.regex.minmaxwh, "").match(t.regex.other)
+            };
+        if (t.ajax = p, t.queue = f, t.unsupportedmq = w, t.regex = {
+            media: /@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,
+            keyframes: /@(?:\-(?:o|moz|webkit)\-)?keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]*\}/gi,
+            comments: /\/\*[^*]*\*+([^/][^*]*\*+)*\//gi,
+            urls: /(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,
+            findStyles: /@media *([^\{]+)\{([\S\s]+?)$/,
+            only: /(only\s+)?([a-zA-Z]+)\s?/,
+            minw: /\(\s*min\-width\s*:\s*(\s*[0-9\.]+)(px|em)\s*\)/,
+            maxw: /\(\s*max\-width\s*:\s*(\s*[0-9\.]+)(px|em)\s*\)/,
+            minmaxwh: /\(\s*m(in|ax)\-(height|width)\s*:\s*(\s*[0-9\.]+)(px|em)\s*\)/gi,
+            other: /\([^\)]*\)/g
+        }, t.mediaQueriesSupported = n.matchMedia && n.matchMedia("only all") !== null && n.matchMedia("only all").matches, !t.mediaQueriesSupported) {
+            var i = n.document,
+                r = i.documentElement,
+                e = [],
+                o = [],
+                u = [],
+                c = {},
+                b = 30,
+                s = i.getElementsByTagName("head")[0] || r,
+                rt = i.getElementsByTagName("base")[0],
+                h = s.getElementsByTagName("link"),
+                l, k, a, v = function () {
+                    var f, t = i.createElement("div"),
+                        n = i.body,
+                        o = r.style.fontSize,
+                        e = n && n.style.fontSize,
+                        u = !1;
+                    return t.style.cssText = "position:absolute;font-size:1em;width:1em", n || (n = u = i.createElement("body"), n.style.background = "none"), r.style.fontSize = "100%", n.style.fontSize = "100%", n.appendChild(t), u && r.insertBefore(n, r.firstChild), f = t.offsetWidth, u ? r.removeChild(n) : n.removeChild(t), r.style.fontSize = o, e && (n.style.fontSize = e), a = parseFloat(f)
+                },
+                y = function (t) {
+                    var rt = "clientWidth",
+                        ut = r[rt],
+                        ft = i.compatMode === "CSS1Compat" && ut || i.body[rt] || ut,
+                        p = {},
+                        ct = h[h.length - 1],
+                        et = (new Date).getTime(),
+                        tt, g, nt, f, it;
+                    if (t && l && et - l < b) {
+                        n.clearTimeout(k);
+                        k = n.setTimeout(y, b);
+                        return
+                    }
+                    l = et;
+                    for (tt in e)
+                        if (e.hasOwnProperty(tt)) {
+                            var c = e[tt],
+                                w = c.minw,
+                                d = c.maxw,
+                                ot = w === null,
+                                st = d === null,
+                                ht = "em";
+                            !w || (w = parseFloat(w) * (w.indexOf(ht) > -1 ? a || v() : 1));
+                            !d || (d = parseFloat(d) * (d.indexOf(ht) > -1 ? a || v() : 1));
+                            c.hasquery && (ot && st || !(ot || ft >= w) || !(st || ft <= d)) || (p[c.media] || (p[c.media] = []), p[c.media].push(o[c.rules]))
+                        }
+                    for (g in u) u.hasOwnProperty(g) && u[g] && u[g].parentNode === s && s.removeChild(u[g]);
+                    u.length = 0;
+                    for (nt in p) p.hasOwnProperty(nt) && (f = i.createElement("style"), it = p[nt].join("\n"), f.type = "text/css", f.media = nt, s.insertBefore(f, ct.nextSibling), f.styleSheet ? f.styleSheet.cssText = it : f.appendChild(i.createTextNode(it)), u.push(f))
+                },
+                d = function (n, i, r) {
+                    var h = n.replace(t.regex.comments, "").replace(t.regex.keyframes, "").match(t.regex.media),
+                        c = h && h.length || 0,
+                        l, a, f, v, u, p, b, s;
+                    for (i = i.substring(0, i.lastIndexOf("/")), l = function (n) {
+                        return n.replace(t.regex.urls, "$1" + i + "$2$3")
+                    }, a = !c && r, i.length && (i += "/"), a && (c = 1), f = 0; f < c; f++)
+                        for (a ? (v = r, o.push(l(n))) : (v = h[f].match(t.regex.findStyles) && RegExp.$1, o.push(RegExp.$2 && l(RegExp.$2))), p = v.split(","), b = p.length, s = 0; s < b; s++) (u = p[s], w(u)) || e.push({
+                            media: u.split("(")[0].match(t.regex.only) && RegExp.$2 || "all",
+                            rules: o.length - 1,
+                            hasquery: u.indexOf("(") > -1,
+                            minw: u.match(t.regex.minw) && parseFloat(RegExp.$1) + (RegExp.$2 || ""),
+                            maxw: u.match(t.regex.maxw) && parseFloat(RegExp.$1) + (RegExp.$2 || "")
+                        });
+                    y()
+                },
+                g = function () {
+                    if (f.length) {
+                        var t = f.shift();
+                        p(t.href, function (i) {
+                            d(i, t.href, t.media);
+                            c[t.href] = !0;
+                            n.setTimeout(function () {
+                                g()
+                            }, 0)
+                        })
+                    }
+                },
+                nt = function () {
+                    for (var r = 0; r < h.length; r++) {
+                        var i = h[r],
+                            t = i.href,
+                            u = i.media,
+                            e = i.rel && i.rel.toLowerCase() === "stylesheet";
+                        !t || !e || c[t] || (i.styleSheet && i.styleSheet.rawCssText ? (d(i.styleSheet.rawCssText, t, u), c[t] = !0) : (/^([a-zA-Z:]*\/\/)/.test(t) || rt) && t.replace(RegExp.$1, "").split("/")[0] !== n.location.host || (t.substring(0, 2) === "//" && (t = n.location.protocol + t), f.push({
+                            href: t,
+                            media: u
+                        })))
+                    }
+                    g()
+                };
+            nt();
+            t.update = nt;
+            t.getEmValue = v;
+            n.addEventListener ? n.addEventListener("resize", tt, !1) : n.attachEvent && n.attachEvent("onresize", tt)
+        }
+    }(this),
+    function (n) {
+        function a() {
+            try {
+                return r in n && n[r]
+            } catch (t) {
+                return !1
+            }
+        }
+        var t = {},
+            s = n.document,
+            r = "localStorage",
+            c = "script",
+            i, f, e, l, u;
+        if (t.disabled = !1, t.set = function () { }, t.get = function () { }, t.remove = function () { }, t.clear = function () { }, t.transact = function (n, i, r) {
+            var u = t.get(n);
+            r == null && (r = i, i = null);
+            typeof u == "undefined" && (u = i || {});
+            r(u);
+            t.set(n, u)
+        }, t.getAll = function () { }, t.forEach = function () { }, t.serialize = function (n) {
+            return JSON.stringify(n)
+        }, t.deserialize = function (n) {
+            if (typeof n != "string") return undefined;
+            try {
+                return JSON.parse(n)
+            } catch (t) {
+                return n || undefined
+            }
+        }, a()) i = n[r], t.set = function (n, r) {
+            return r === undefined ? t.remove(n) : (i.setItem(n, t.serialize(r)), r)
+        }, t.get = function (n) {
+            return t.deserialize(i.getItem(n))
+        }, t.remove = function (n) {
+            i.removeItem(n)
+        }, t.clear = function () {
+            i.clear()
+        }, t.getAll = function () {
+            var n = {};
+            return t.forEach(function (t, i) {
+                n[t] = i
+            }), n
+        }, t.forEach = function (n) {
+            for (var u, r = 0; r < i.length; r++) u = i.key(r), n(u, t.get(u))
+        };
+        else if (s.documentElement.addBehavior) {
+            try {
+                e = new ActiveXObject("htmlfile");
+                e.open();
+                e.write("<" + c + ">document.w=window<\/" + c + '><iframe src="/favicon.ico"><\/iframe>');
+                e.close();
+                f = e.w.frames[0].document;
+                i = f.createElement("div")
+            } catch (v) {
+                i = s.createElement("div");
+                f = s.body
+            }
+
+            function o(n) {
+                return function () {
+                    var u = Array.prototype.slice.call(arguments, 0),
+                        e;
+                    return u.unshift(i), f.appendChild(i), i.addBehavior("#default#userData"), i.load(r), e = n.apply(t, u), f.removeChild(i), e
+                }
+            }
+            l = new RegExp("[!\"#$%&'()*+,/\\\\:;<=>?@[\\]^`{|}~]", "g");
+
+            function h(n) {
+                return n.replace(l, "___")
+            }
+            t.set = o(function (n, i, u) {
+                return i = h(i), u === undefined ? t.remove(i) : (n.setAttribute(i, t.serialize(u)), n.save(r), u)
+            });
+            t.get = o(function (n, i) {
+                return i = h(i), t.deserialize(n.getAttribute(i))
+            });
+            t.remove = o(function (n, t) {
+                t = h(t);
+                n.removeAttribute(t);
+                n.save(r)
+            });
+            t.clear = o(function (n) {
+                var u = n.XMLDocument.documentElement.attributes,
+                    t, i;
+                for (n.load(r), t = 0; i = u[t]; t++) n.removeAttribute(i.name);
+                n.save(r)
+            });
+            t.getAll = function () {
+                var n = {};
+                return t.forEach(function (t, i) {
+                    n[t] = i
+                }), n
+            };
+            t.forEach = o(function (n, i) {
+                for (var f = n.XMLDocument.documentElement.attributes, u = 0, r; r = f[u]; ++u) i(r.name, t.deserialize(n.getAttribute(r.name)))
+            })
+        }
+        try {
+            u = "__storejs__";
+            t.set(u, u);
+            t.get(u) != u && (t.disabled = !0);
+            t.remove(u)
+        } catch (v) {
+            t.disabled = !0
+        }
+        t.enabled = !t.disabled;
+        typeof module != "undefined" && module.exports ? module.exports = t : typeof define == "function" && define.amd ? define(t) : n.store = t
+    }(this.window || global),
+    function () {
+        var t = [].indexOf || function (n) {
+                for (var t = 0, i = this.length; t < i; t++)
+                    if (t in this && this[t] === n) return t;
+                return -1
+            },
+            n = [].slice;
+        (function (n, t) {
+            return typeof define == "function" && define.amd ? define("waypoints", ["jquery"], function (i) {
+                return t(i, n)
+            }) : t(n.jQuery, n)
+        })(this, function (i, r) {
+            var a, b, v, o, k, h, s, y, u, f, p, w, d, l, c, e;
+            return a = i(r), y = t.call(r, "ontouchstart") >= 0, o = {
+                horizontal: {},
+                vertical: {}
+            }, k = 1, s = {}, h = "waypoints-context-id", p = "resize.waypoints", w = "scroll.waypoints", d = 1, l = "waypoints-waypoint-ids", c = "waypoint", e = "waypoints", b = function () {
+                function n(n) {
+                    var t = this;
+                    this.$element = n;
+                    this.element = n[0];
+                    this.didResize = !1;
+                    this.didScroll = !1;
+                    this.id = "context" + k++;
+                    this.oldScroll = {
+                        x: n.scrollLeft(),
+                        y: n.scrollTop()
+                    };
+                    this.waypoints = {
+                        horizontal: {},
+                        vertical: {}
+                    };
+                    n.data(h, this.id);
+                    s[this.id] = this;
+                    n.bind(w, function () {
+                        var n;
+                        if (!(t.didScroll || y)) return t.didScroll = !0, n = function () {
+                            return t.doScroll(), t.didScroll = !1
+                        }, r.setTimeout(n, i[e].settings.scrollThrottle)
+                    });
+                    n.bind(p, function () {
+                        var n;
+                        if (!t.didResize) return t.didResize = !0, n = function () {
+                            return i[e]("refresh"), t.didResize = !1
+                        }, r.setTimeout(n, i[e].settings.resizeThrottle)
+                    })
+                }
+                return n.prototype.doScroll = function () {
+                    var n, t = this;
+                    return n = {
+                        horizontal: {
+                            newScroll: this.$element.scrollLeft(),
+                            oldScroll: this.oldScroll.x,
+                            forward: "right",
+                            backward: "left"
+                        },
+                        vertical: {
+                            newScroll: this.$element.scrollTop(),
+                            oldScroll: this.oldScroll.y,
+                            forward: "down",
+                            backward: "up"
+                        }
+                    }, !y || n.vertical.oldScroll && n.vertical.newScroll || i[e]("refresh"), i.each(n, function (n, r) {
+                        var e, f, u;
+                        return u = [], f = r.newScroll > r.oldScroll, e = f ? r.forward : r.backward, i.each(t.waypoints[n], function (n, t) {
+                            var i, f;
+                            return r.oldScroll < (i = t.offset) && i <= r.newScroll ? u.push(t) : r.newScroll < (f = t.offset) && f <= r.oldScroll ? u.push(t) : void 0
+                        }), u.sort(function (n, t) {
+                            return n.offset - t.offset
+                        }), f || u.reverse(), i.each(u, function (n, t) {
+                            if (t.options.continuous || n === u.length - 1) return t.trigger([e])
+                        })
+                    }), this.oldScroll = {
+                        x: n.horizontal.newScroll,
+                        y: n.vertical.newScroll
+                    }
+                }, n.prototype.refresh = function () {
+                    var r, t, n, u = this;
+                    return n = i.isWindow(this.element), t = this.$element.offset(), this.doScroll(), r = {
+                        horizontal: {
+                            contextOffset: n ? 0 : t.left,
+                            contextScroll: n ? 0 : this.oldScroll.x,
+                            contextDimension: this.$element.width(),
+                            oldScroll: this.oldScroll.x,
+                            forward: "right",
+                            backward: "left",
+                            offsetProp: "left"
+                        },
+                        vertical: {
+                            contextOffset: n ? 0 : t.top,
+                            contextScroll: n ? 0 : this.oldScroll.y,
+                            contextDimension: n ? i[e]("viewportHeight") : this.$element.height(),
+                            oldScroll: this.oldScroll.y,
+                            forward: "down",
+                            backward: "up",
+                            offsetProp: "top"
+                        }
+                    }, i.each(r, function (n, t) {
+                        return i.each(u.waypoints[n], function (n, r) {
+                            var u, e, f, o, s;
+                            if (u = r.options.offset, f = r.offset, e = i.isWindow(r.element) ? 0 : r.$element.offset()[t.offsetProp], i.isFunction(u) ? u = u.apply(r.element) : typeof u == "string" && (u = parseFloat(u), r.options.offset.indexOf("%") > -1 && (u = Math.ceil(t.contextDimension * u / 100))), r.offset = e - t.contextOffset + t.contextScroll - u, (!r.options.onlyOnScroll || f == null) && r.enabled) return f !== null && f < (o = t.oldScroll) && o <= r.offset ? r.trigger([t.backward]) : f !== null && f > (s = t.oldScroll) && s >= r.offset ? r.trigger([t.forward]) : f === null && t.oldScroll >= r.offset ? r.trigger([t.forward]) : void 0
+                        })
+                    })
+                }, n.prototype.checkEmpty = function () {
+                    if (i.isEmptyObject(this.waypoints.horizontal) && i.isEmptyObject(this.waypoints.vertical)) return this.$element.unbind([p, w].join(" ")), delete s[this.id]
+                }, n
+            }(), v = function () {
+                function n(n, t, r) {
+                    var u, f;
+                    r = i.extend({}, i.fn[c].defaults, r);
+                    r.offset === "bottom-in-view" && (r.offset = function () {
+                        var n;
+                        return n = i[e]("viewportHeight"), i.isWindow(t.element) || (n = t.$element.height()), n - i(this).outerHeight()
+                    });
+                    this.$element = n;
+                    this.element = n[0];
+                    this.axis = r.horizontal ? "horizontal" : "vertical";
+                    this.callback = r.handler;
+                    this.context = t;
+                    this.enabled = r.enabled;
+                    this.id = "waypoints" + d++;
+                    this.offset = null;
+                    this.options = r;
+                    t.waypoints[this.axis][this.id] = this;
+                    o[this.axis][this.id] = this;
+                    u = (f = n.data(l)) != null ? f : [];
+                    u.push(this.id);
+                    n.data(l, u)
+                }
+                return n.prototype.trigger = function (n) {
+                    if (this.enabled) return this.callback != null && this.callback.apply(this.element, n), this.options.triggerOnce ? this.destroy() : void 0
+                }, n.prototype.disable = function () {
+                    return this.enabled = !1
+                }, n.prototype.enable = function () {
+                    return this.context.refresh(), this.enabled = !0
+                }, n.prototype.destroy = function () {
+                    return delete o[this.axis][this.id], delete this.context.waypoints[this.axis][this.id], this.context.checkEmpty()
+                }, n.getWaypointsByElement = function (n) {
+                    var r, t;
+                    return (t = i(n).data(l), !t) ? [] : (r = i.extend({}, o.horizontal, o.vertical), i.map(t, function (n) {
+                        return r[n]
+                    }))
+                }, n
+            }(), f = {
+                init: function (n, t) {
+                    var r;
+                    return t == null && (t = {}), (r = t.handler) == null && (t.handler = n), this.each(function () {
+                        var u, r, n, f;
+                        return u = i(this), n = (f = t.context) != null ? f : i.fn[c].defaults.context, i.isWindow(n) || (n = u.closest(n)), n = i(n), r = s[n.data(h)], r || (r = new b(n)), new v(u, r, t)
+                    }), i[e]("refresh"), this
+                },
+                disable: function () {
+                    return f._invoke(this, "disable")
+                },
+                enable: function () {
+                    return f._invoke(this, "enable")
+                },
+                destroy: function () {
+                    return f._invoke(this, "destroy")
+                },
+                prev: function (n, t) {
+                    return f._traverse.call(this, n, t, function (n, t, i) {
+                        if (t > 0) return n.push(i[t - 1])
+                    })
+                },
+                next: function (n, t) {
+                    return f._traverse.call(this, n, t, function (n, t, i) {
+                        if (t < i.length - 1) return n.push(i[t + 1])
+                    })
+                },
+                _traverse: function (n, t, f) {
+                    var e, o;
+                    return n == null && (n = "vertical"), t == null && (t = r), o = u.aggregate(t), e = [], this.each(function () {
+                        var t;
+                        return t = i.inArray(this, o[n]), f(e, t, o[n])
+                    }), this.pushStack(e)
+                },
+                _invoke: function (n, t) {
+                    return n.each(function () {
+                        var n;
+                        return n = v.getWaypointsByElement(this), i.each(n, function (n, i) {
+                            return i[t](), !0
+                        })
+                    }), this
+                }
+            }, i.fn[c] = function () {
+                var r, t;
+                return t = arguments[0], r = 2 <= arguments.length ? n.call(arguments, 1) : [], f[t] ? f[t].apply(this, r) : i.isFunction(t) ? f.init.apply(this, arguments) : i.isPlainObject(t) ? f.init.apply(this, [null, t]) : t ? i.error("The " + t + " method does not exist in jQuery Waypoints.") : i.error("jQuery Waypoints needs a callback function or handler option.")
+            }, i.fn[c].defaults = {
+                context: r,
+                continuous: !0,
+                enabled: !0,
+                horizontal: !1,
+                offset: 0,
+                triggerOnce: !1
+            }, u = {
+                refresh: function () {
+                    return i.each(s, function (n, t) {
+                        return t.refresh()
+                    })
+                },
+                viewportHeight: function () {
+                    var n;
+                    return (n = r.innerHeight) != null ? n : a.height()
+                },
+                aggregate: function (n) {
+                    var r, t, u;
+                    return (r = o, n && (r = (u = s[i(n).data(h)]) != null ? u.waypoints : void 0), !r) ? [] : (t = {
+                        horizontal: [],
+                        vertical: []
+                    }, i.each(t, function (n, u) {
+                        return i.each(r[n], function (n, t) {
+                            return u.push(t)
+                        }), u.sort(function (n, t) {
+                            return n.offset - t.offset
+                        }), t[n] = i.map(u, function (n) {
+                            return n.element
+                        }), t[n] = i.unique(t[n])
+                    }), t)
+                },
+                above: function (n) {
+                    return n == null && (n = r), u._filter(n, "vertical", function (n, t) {
+                        return t.offset <= n.oldScroll.y
+                    })
+                },
+                below: function (n) {
+                    return n == null && (n = r), u._filter(n, "vertical", function (n, t) {
+                        return t.offset > n.oldScroll.y
+                    })
+                },
+                left: function (n) {
+                    return n == null && (n = r), u._filter(n, "horizontal", function (n, t) {
+                        return t.offset <= n.oldScroll.x
+                    })
+                },
+                right: function (n) {
+                    return n == null && (n = r), u._filter(n, "horizontal", function (n, t) {
+                        return t.offset > n.oldScroll.x
+                    })
+                },
+                enable: function () {
+                    return u._invoke("enable")
+                },
+                disable: function () {
+                    return u._invoke("disable")
+                },
+                destroy: function () {
+                    return u._invoke("destroy")
+                },
+                extendFn: function (n, t) {
+                    return f[n] = t
+                },
+                _invoke: function (n) {
+                    var t;
+                    return t = i.extend({}, o.vertical, o.horizontal), i.each(t, function (t, i) {
+                        return i[n](), !0
+                    })
+                },
+                _filter: function (n, t, r) {
+                    var u, f;
+                    return (u = s[i(n).data(h)], !u) ? [] : (f = [], i.each(u.waypoints[t], function (n, t) {
+                        if (r(u, t)) return f.push(t)
+                    }), f.sort(function (n, t) {
+                        return n.offset - t.offset
+                    }), i.map(f, function (n) {
+                        return n.element
+                    }))
+                }
+            }, i[e] = function () {
+                var i, t;
+                return t = arguments[0], i = 2 <= arguments.length ? n.call(arguments, 1) : [], u[t] ? u[t].apply(null, i) : u.aggregate.call(null, t)
+            }, i[e].settings = {
+                resizeThrottle: 100,
+                scrollThrottle: 30
+            }, a.load(function () {
+                return i[e]("refresh")
+            })
+        })
+    }.call(this),
+    function () {
+        (function (n, t) {
+            return typeof define == "function" && define.amd ? define(["jquery", "waypoints"], t) : t(n.jQuery)
+        })(this, function (n) {
+            var t, i;
+            return t = {
+                wrapper: '<div class="sticky-wrapper" />',
+                stuckClass: "stuck"
+            }, i = function (n, t) {
+                return n.wrap(t.wrapper), n.parent()
+            }, n.waypoints("extendFn", "sticky", function (r) {
+                var f, u, e;
+                return u = n.extend({}, n.fn.waypoint.defaults, t, r), f = i(this, u), e = u.handler, u.handler = function (t) {
+                    var i, r;
+                    return i = n(this).children(":first"), r = t === "down" || t === "right", i.toggleClass(u.stuckClass, r), f.height(r ? i.outerHeight() : ""), e != null ? e.call(this, t) : void 0
+                }, f.waypoint(u), this.data("stuckClass", u.stuckClass)
+            }), n.waypoints("extendFn", "unsticky", function () {
+                return this.parent().waypoint("destroy"), this.unwrap(), this.removeClass(this.data("stuckClass"))
+            })
+        })
+    }.call(this);
+var kkeys = [],
+    konami = "38,38,40,40,37,39,37,39,66,65";
+$(document).keyup(function (n) {
+    kkeys.push(n.keyCode);
+    kkeys.toString().indexOf(konami) >= 0 && (rollCredits(), kkeys = [])
+}); + function (n) {
+    "use strict";
+    var i = '[data-dismiss="alert"]',
+        t = function (t) {
+            n(t).on("click", i, this.close)
+        },
+        r;
+    t.prototype.close = function (t) {
+        function f() {
+            i.trigger("closed.bs.alert").remove()
+        }
+        var u = n(this),
+            r = u.attr("data-target"),
+            i;
+        (r || (r = u.attr("href"), r = r && r.replace(/.*(?=#[^\s]*$)/, "")), i = n(r), t && t.preventDefault(), i.length || (i = u.hasClass("alert") ? u : u.parent()), i.trigger(t = n.Event("close.bs.alert")), t.isDefaultPrevented()) || (i.removeClass("in"), n.support.transition && i.hasClass("fade") ? i.one(n.support.transition.end, f).emulateTransitionEnd(150) : f())
+    };
+    r = n.fn.alert;
+    n.fn.alert = function (i) {
+        return this.each(function () {
+            var r = n(this),
+                u = r.data("bs.alert");
+            u || r.data("bs.alert", u = new t(this));
+            typeof i == "string" && u[i].call(r)
+        })
+    };
+    n.fn.alert.Constructor = t;
+    n.fn.alert.noConflict = function () {
+        return n.fn.alert = r, this
+    };
+    n(document).on("click.bs.alert.data-api", i, t.prototype.close)
+}
+(jQuery); + function (n) {
+    "use strict";
+    var t = function (t, i) {
+            this.options = i;
+            this.$element = n(t);
+            this.$backdrop = this.isShown = null;
+            this.options.remote && this.$element.load(this.options.remote)
+        },
+        i;
+    t.DEFAULTS = {
+        backdrop: !0,
+        keyboard: !0,
+        show: !0
+    };
+    t.prototype.toggle = function (n) {
+        return this[this.isShown ? "hide" : "show"](n)
+    };
+    t.prototype.show = function (t) {
+        var i = this,
+            r = n.Event("show.bs.modal", {
+                relatedTarget: t
+            });
+        (this.$element.trigger(r), this.isShown || r.isDefaultPrevented()) || (this.isShown = !0, this.escape(), this.$element.on("click.dismiss.modal", '[data-dismiss="modal"]', n.proxy(this.hide, this)), this.backdrop(function () {
+            var u = n.support.transition && i.$element.hasClass("fade"),
+                r;
+            i.$element.parent().length || i.$element.appendTo(document.body);
+            i.$element.show();
+            u && i.$element[0].offsetWidth;
+            i.$element.addClass("in").attr("aria-hidden", !1);
+            i.enforceFocus();
+            r = n.Event("shown.bs.modal", {
+                relatedTarget: t
+            });
+            u ? i.$element.find(".modal-dialog").one(n.support.transition.end, function () {
+                i.$element.focus().trigger(r)
+            }).emulateTransitionEnd(300) : i.$element.focus().trigger(r)
+        }))
+    };
+    t.prototype.hide = function (t) {
+        (t && t.preventDefault(), t = n.Event("hide.bs.modal"), this.$element.trigger(t), this.isShown && !t.isDefaultPrevented()) && (this.isShown = !1, this.escape(), n(document).off("focusin.bs.modal"), this.$element.removeClass("in").attr("aria-hidden", !0).off("click.dismiss.modal"), n.support.transition && this.$element.hasClass("fade") ? this.$element.one(n.support.transition.end, n.proxy(this.hideModal, this)).emulateTransitionEnd(300) : this.hideModal())
+    };
+    t.prototype.enforceFocus = function () {
+        n(document).off("focusin.bs.modal").on("focusin.bs.modal", n.proxy(function (n) {
+            this.$element[0] === n.target || this.$element.has(n.target).length || this.$element.focus()
+        }, this))
+    };
+    t.prototype.escape = function () {
+        this.isShown && this.options.keyboard ? this.$element.on("keyup.dismiss.bs.modal", n.proxy(function (n) {
+            n.which == 27 && this.hide()
+        }, this)) : this.isShown || this.$element.off("keyup.dismiss.bs.modal")
+    };
+    t.prototype.hideModal = function () {
+        var n = this;
+        this.$element.hide();
+        this.backdrop(function () {
+            n.removeBackdrop();
+            n.$element.trigger("hidden.bs.modal")
+        })
+    };
+    t.prototype.removeBackdrop = function () {
+        this.$backdrop && this.$backdrop.remove();
+        this.$backdrop = null
+    };
+    t.prototype.backdrop = function (t) {
+        var u = this,
+            r = this.$element.hasClass("fade") ? "fade" : "",
+            i;
+        if (this.isShown && this.options.backdrop) {
+            if (i = n.support.transition && r, this.$backdrop = n('<div class="modal-backdrop ' + r + '" />').appendTo(document.body), this.$element.on("click.dismiss.modal", n.proxy(function (n) {
+                n.target === n.currentTarget && (this.options.backdrop == "static" ? this.$element[0].focus.call(this.$element[0]) : this.hide.call(this))
+            }, this)), i && this.$backdrop[0].offsetWidth, this.$backdrop.addClass("in"), !t) return;
+            i ? this.$backdrop.one(n.support.transition.end, t).emulateTransitionEnd(150) : t()
+        } else !this.isShown && this.$backdrop ? (this.$backdrop.removeClass("in"), n.support.transition && this.$element.hasClass("fade") ? this.$backdrop.one(n.support.transition.end, t).emulateTransitionEnd(150) : t()) : t && t()
+    };
+    i = n.fn.modal;
+    n.fn.modal = function (i, r) {
+        return this.each(function () {
+            var f = n(this),
+                u = f.data("bs.modal"),
+                e = n.extend({}, t.DEFAULTS, f.data(), typeof i == "object" && i);
+            u || f.data("bs.modal", u = new t(this, e));
+            typeof i == "string" ? u[i](r) : e.show && u.show(r)
+        })
+    };
+    n.fn.modal.Constructor = t;
+    n.fn.modal.noConflict = function () {
+        return n.fn.modal = i, this
+    };
+    n(document).on("click.bs.modal.data-api", '[data-toggle="modal"]', function (t) {
+        var i = n(this),
+            r = i.attr("href"),
+            u = n(i.attr("data-target") || r && r.replace(/.*(?=#[^\s]+$)/, "")),
+            f = u.data("modal") ? "toggle" : n.extend({
+                remote: !/#/.test(r) && r
+            }, u.data(), i.data());
+        t.preventDefault();
+        u.modal(f, this).one("hide", function () {
+            i.is(":visible") && i.focus()
+        })
+    });
+    n(document).on("show.bs.modal", ".modal", function () {
+        n(document.body).addClass("modal-open")
+    }).on("hidden.bs.modal", ".modal", function () {
+        n(document.body).removeClass("modal-open")
+    })
+}(jQuery); + function (n) {
+    "use strict";
+    var t = function (n, t) {
+            this.type = this.options = this.enabled = this.timeout = this.hoverState = this.$element = null;
+            this.init("tooltip", n, t)
+        },
+        i;
+    t.DEFAULTS = {
+        animation: !0,
+        placement: "top",
+        selector: !1,
+        template: '<div class="tooltip"><div class="tooltip-arrow"><\/div><div class="tooltip-inner"><\/div><\/div>',
+        trigger: "hover focus",
+        title: "",
+        delay: 0,
+        html: !1,
+        container: !1
+    };
+    t.prototype.init = function (t, i, r) {
+        var f, e, u, o, s;
+        for (this.enabled = !0, this.type = t, this.$element = n(i), this.options = this.getOptions(r), f = this.options.trigger.split(" "), e = f.length; e--;)
+            if (u = f[e], u == "click") this.$element.on("click." + this.type, this.options.selector, n.proxy(this.toggle, this));
+            else u != "manual" && (o = u == "hover" ? "mouseenter" : "focus", s = u == "hover" ? "mouseleave" : "blur", this.$element.on(o + "." + this.type, this.options.selector, n.proxy(this.enter, this)), this.$element.on(s + "." + this.type, this.options.selector, n.proxy(this.leave, this)));
+        this.options.selector ? this._options = n.extend({}, this.options, {
+            trigger: "manual",
+            selector: ""
+        }) : this.fixTitle()
+    };
+    t.prototype.getDefaults = function () {
+        return t.DEFAULTS
+    };
+    t.prototype.getOptions = function (t) {
+        return t = n.extend({}, this.getDefaults(), this.$element.data(), t), t.delay && typeof t.delay == "number" && (t.delay = {
+            show: t.delay,
+            hide: t.delay
+        }), t
+    };
+    t.prototype.getDelegateOptions = function () {
+        var t = {},
+            i = this.getDefaults();
+        return this._options && n.each(this._options, function (n, r) {
+            i[n] != r && (t[n] = r)
+        }), t
+    };
+    t.prototype.enter = function (t) {
+        var i = t instanceof this.constructor ? t : n(t.currentTarget)[this.type](this.getDelegateOptions()).data("bs." + this.type);
+        if (clearTimeout(i.timeout), i.hoverState = "in", !i.options.delay || !i.options.delay.show) return i.show();
+        i.timeout = setTimeout(function () {
+            i.hoverState == "in" && i.show()
+        }, i.options.delay.show)
+    };
+    t.prototype.leave = function (t) {
+        var i = t instanceof this.constructor ? t : n(t.currentTarget)[this.type](this.getDelegateOptions()).data("bs." + this.type);
+        if (clearTimeout(i.timeout), i.hoverState = "out", !i.options.delay || !i.options.delay.hide) return i.hide();
+        i.timeout = setTimeout(function () {
+            i.hoverState == "out" && i.hide()
+        }, i.options.delay.hide)
+    };
+    t.prototype.show = function () {
+        var o = n.Event("show.bs." + this.type),
+            i, l;
+        if (this.hasContent() && this.enabled) {
+            if (this.$element.trigger(o), o.isDefaultPrevented()) return;
+            i = this.tip();
+            this.setContent();
+            this.options.animation && i.addClass("fade");
+            var t = typeof this.options.placement == "function" ? this.options.placement.call(this, i[0], this.$element[0]) : this.options.placement,
+                s = /\s?auto?\s?/i,
+                h = s.test(t);
+            h && (t = t.replace(s, "") || "top");
+            i.detach().css({
+                top: 0,
+                left: 0,
+                display: "block"
+            }).addClass(t);
+            this.options.container ? i.appendTo(this.options.container) : i.insertAfter(this.$element);
+            var r = this.getPosition(),
+                u = i[0].offsetWidth,
+                f = i[0].offsetHeight;
+            if (h) {
+                var e = this.$element.parent(),
+                    a = t,
+                    c = document.documentElement.scrollTop || document.body.scrollTop,
+                    v = this.options.container == "body" ? window.innerWidth : e.outerWidth(),
+                    y = this.options.container == "body" ? window.innerHeight : e.outerHeight(),
+                    p = this.options.container == "body" ? 0 : e.offset().left;
+                t = t == "bottom" && r.top + r.height + f - c > y ? "top" : t == "top" && r.top - c - f < 0 ? "bottom" : t == "right" && r.right + u > v ? "left" : t == "left" && r.left - u < p ? "right" : t;
+                i.removeClass(a).addClass(t)
+            }
+            l = this.getCalculatedOffset(t, r, u, f);
+            this.applyPlacement(l, t);
+            this.$element.trigger("shown.bs." + this.type)
+        }
+    };
+    t.prototype.applyPlacement = function (n, t) {
+        var h, i = this.tip(),
+            c = i[0].offsetWidth,
+            f = i[0].offsetHeight,
+            e = parseInt(i.css("margin-top"), 10),
+            o = parseInt(i.css("margin-left"), 10),
+            u, r, s;
+        isNaN(e) && (e = 0);
+        isNaN(o) && (o = 0);
+        n.top = n.top + e;
+        n.left = n.left + o;
+        i.offset(n).addClass("in");
+        u = i[0].offsetWidth;
+        r = i[0].offsetHeight;
+        t == "top" && r != f && (h = !0, n.top = n.top + f - r);
+        /bottom|top/.test(t) ? (s = 0, n.left < 0 && (s = n.left * -2, n.left = 0, i.offset(n), u = i[0].offsetWidth, r = i[0].offsetHeight), this.replaceArrow(s - c + u, u, "left")) : this.replaceArrow(r - f, r, "top");
+        h && i.offset(n)
+    };
+    t.prototype.replaceArrow = function (n, t, i) {
+        this.arrow().css(i, n ? 50 * (1 - n / t) + "%" : "")
+    };
+    t.prototype.setContent = function () {
+        var n = this.tip(),
+            t = this.getTitle();
+        n.find(".tooltip-inner")[this.options.html ? "html" : "text"](t);
+        n.removeClass("fade in top bottom left right")
+    };
+    t.prototype.hide = function () {
+        function i() {
+            u.hoverState != "in" && t.detach()
+        }
+        var u = this,
+            t = this.tip(),
+            r = n.Event("hide.bs." + this.type);
+        if (this.$element.trigger(r), !r.isDefaultPrevented()) return t.removeClass("in"), n.support.transition && this.$tip.hasClass("fade") ? t.one(n.support.transition.end, i).emulateTransitionEnd(150) : i(), this.$element.trigger("hidden.bs." + this.type), this
+    };
+    t.prototype.fixTitle = function () {
+        var n = this.$element;
+        (n.attr("title") || typeof n.attr("data-original-title") != "string") && n.attr("data-original-title", n.attr("title") || "").attr("title", "")
+    };
+    t.prototype.hasContent = function () {
+        return this.getTitle()
+    };
+    t.prototype.getPosition = function () {
+        var t = this.$element[0];
+        return n.extend({}, typeof t.getBoundingClientRect == "function" ? t.getBoundingClientRect() : {
+            width: t.offsetWidth,
+            height: t.offsetHeight
+        }, this.$element.offset())
+    };
+    t.prototype.getCalculatedOffset = function (n, t, i, r) {
+        return n == "bottom" ? {
+            top: t.top + t.height,
+            left: t.left + t.width / 2 - i / 2
+        } : n == "top" ? {
+            top: t.top - r,
+            left: t.left + t.width / 2 - i / 2
+        } : n == "left" ? {
+            top: t.top + t.height / 2 - r / 2,
+            left: t.left - i
+        } : {
+            top: t.top + t.height / 2 - r / 2,
+            left: t.left + t.width
+        }
+    };
+    t.prototype.getTitle = function () {
+        var t, i = this.$element,
+            n = this.options;
+        return t = i.attr("data-original-title") || (typeof n.title == "function" ? n.title.call(i[0]) : n.title), t
+    };
+    t.prototype.tip = function () {
+        return this.$tip = this.$tip || n(this.options.template)
+    };
+    t.prototype.arrow = function () {
+        return this.$arrow = this.$arrow || this.tip().find(".tooltip-arrow")
+    };
+    t.prototype.validate = function () {
+        this.$element[0].parentNode || (this.hide(), this.$element = null, this.options = null)
+    };
+    t.prototype.enable = function () {
+        this.enabled = !0
+    };
+    t.prototype.disable = function () {
+        this.enabled = !1
+    };
+    t.prototype.toggleEnabled = function () {
+        this.enabled = !this.enabled
+    };
+    t.prototype.toggle = function (t) {
+        var i = t ? n(t.currentTarget)[this.type](this.getDelegateOptions()).data("bs." + this.type) : this;
+        i.tip().hasClass("in") ? i.leave(i) : i.enter(i)
+    };
+    t.prototype.destroy = function () {
+        this.hide().$element.off("." + this.type).removeData("bs." + this.type)
+    };
+    i = n.fn.tooltip;
+    n.fn.tooltip = function (i) {
+        return this.each(function () {
+            var u = n(this),
+                r = u.data("bs.tooltip"),
+                f = typeof i == "object" && i;
+            r || u.data("bs.tooltip", r = new t(this, f));
+            typeof i == "string" && r[i]()
+        })
+    };
+    n.fn.tooltip.Constructor = t;
+    n.fn.tooltip.noConflict = function () {
+        return n.fn.tooltip = i, this
+    }
+}(jQuery); + function (n) {
+    "use strict";
+    var t = function (t) {
+            this.element = n(t)
+        },
+        i;
+    t.prototype.show = function () {
+        var t = this.element,
+            e = t.closest("ul:not(.dropdown-menu)"),
+            i = t.data("target"),
+            r, u, f;
+        (i || (i = t.attr("href"), i = i && i.replace(/.*(?=#[^\s]*$)/, "")), t.parent("li").hasClass("active")) || (r = e.find(".active:last a")[0], u = n.Event("show.bs.tab", {
+            relatedTarget: r
+        }), t.trigger(u), u.isDefaultPrevented()) || (f = n(i), this.activate(t.parent("li"), e), this.activate(f, f.parent(), function () {
+            t.trigger({
+                type: "shown.bs.tab",
+                relatedTarget: r
+            })
+        }))
+    };
+    t.prototype.activate = function (t, i, r) {
+        function f() {
+            u.removeClass("active").find("> .dropdown-menu > .active").removeClass("active");
+            t.addClass("active");
+            e ? (t[0].offsetWidth, t.addClass("in")) : t.removeClass("fade");
+            t.parent(".dropdown-menu") && t.closest("li.dropdown").addClass("active");
+            r && r()
+        }
+        var u = i.find("> .active"),
+            e = r && n.support.transition && u.hasClass("fade");
+        e ? u.one(n.support.transition.end, f).emulateTransitionEnd(150) : f();
+        u.removeClass("in")
+    };
+    i = n.fn.tab;
+    n.fn.tab = function (i) {
+        return this.each(function () {
+            var u = n(this),
+                r = u.data("bs.tab");
+            r || u.data("bs.tab", r = new t(this));
+            typeof i == "string" && r[i]()
+        })
+    };
+    n.fn.tab.Constructor = t;
+    n.fn.tab.noConflict = function () {
+        return n.fn.tab = i, this
+    };
+    n(document).on("click.bs.tab.data-api", '[data-toggle="tab"], [data-toggle="pill"]', function (t) {
+        t.preventDefault();
+        n(this).tab("show")
+    })
+}(jQuery); + function (n) {
+    "use strict";
+    var t = function (i, r) {
+            this.$element = n(i);
+            this.options = n.extend({}, t.DEFAULTS, r);
+            this.transitioning = null;
+            this.options.parent && (this.$parent = n(this.options.parent));
+            this.options.toggle && this.toggle()
+        },
+        i;
+    t.DEFAULTS = {
+        toggle: !0
+    };
+    t.prototype.dimension = function () {
+        var n = this.$element.hasClass("width");
+        return n ? "width" : "height"
+    };
+    t.prototype.show = function () {
+        var u, t, r, i, f, e;
+        if (!this.transitioning && !this.$element.hasClass("in") && (u = n.Event("show.bs.collapse"), this.$element.trigger(u), !u.isDefaultPrevented())) {
+            if (t = this.$parent && this.$parent.find("> .panel > .in"), t && t.length) {
+                if (r = t.data("bs.collapse"), r && r.transitioning) return;
+                t.collapse("hide");
+                r || t.data("bs.collapse", null)
+            }
+            if (i = this.dimension(), this.$element.removeClass("collapse").addClass("collapsing")[i](0), this.transitioning = 1, f = function () {
+                this.$element.removeClass("collapsing").addClass("in")[i]("auto");
+                this.transitioning = 0;
+                this.$element.trigger("shown.bs.collapse")
+            }, !n.support.transition) return f.call(this);
+            e = n.camelCase(["scroll", i].join("-"));
+            this.$element.one(n.support.transition.end, n.proxy(f, this)).emulateTransitionEnd(350)[i](this.$element[0][e])
+        }
+    };
+    t.prototype.hide = function () {
+        var i, t, r;
+        if (!this.transitioning && this.$element.hasClass("in") && (i = n.Event("hide.bs.collapse"), this.$element.trigger(i), !i.isDefaultPrevented())) {
+            if (t = this.dimension(), this.$element[t](this.$element[t]())[0].offsetHeight, this.$element.addClass("collapsing").removeClass("collapse").removeClass("in"), this.transitioning = 1, r = function () {
+                this.transitioning = 0;
+                this.$element.trigger("hidden.bs.collapse").removeClass("collapsing").addClass("collapse")
+            }, !n.support.transition) return r.call(this);
+            this.$element[t](0).one(n.support.transition.end, n.proxy(r, this)).emulateTransitionEnd(350)
+        }
+    };
+    t.prototype.toggle = function () {
+        this[this.$element.hasClass("in") ? "hide" : "show"]()
+    };
+    i = n.fn.collapse;
+    n.fn.collapse = function (i) {
+        return this.each(function () {
+            var r = n(this),
+                u = r.data("bs.collapse"),
+                f = n.extend({}, t.DEFAULTS, r.data(), typeof i == "object" && i);
+            u || r.data("bs.collapse", u = new t(this, f));
+            typeof i == "string" && u[i]()
+        })
+    };
+    n.fn.collapse.Constructor = t;
+    n.fn.collapse.noConflict = function () {
+        return n.fn.collapse = i, this
+    };
+    n(document).on("click.bs.collapse.data-api", "[data-toggle=collapse]", function (t) {
+        var i = n(this),
+            e, s = i.attr("data-target") || t.preventDefault() || (e = i.attr("href")) && e.replace(/.*(?=#[^\s]+$)/, ""),
+            r = n(s),
+            u = r.data("bs.collapse"),
+            h = u ? "toggle" : i.data(),
+            f = i.attr("data-parent"),
+            o = f && n(f);
+        u && u.transitioning || (o && o.find('[data-toggle=collapse][data-parent="' + f + '"]').not(i).addClass("collapsed"), i[r.hasClass("in") ? "addClass" : "removeClass"]("collapsed"));
+        r.collapse(h)
+    })
+}(jQuery); + function (n) {
+    function t() {
+        var i = document.createElement("bootstrap"),
+            n = {
+                WebkitTransition: "webkitTransitionEnd",
+                MozTransition: "transitionend",
+                OTransition: "oTransitionEnd otransitionend",
+                transition: "transitionend"
+            };
+        for (var t in n)
+            if (i.style[t] !== undefined) return {
+                end: n[t]
+            }
+    }
+    n.fn.emulateTransitionEnd = function (t) {
+        var i = !1,
+            u = this,
+            r;
+        n(this).one(n.support.transition.end, function () {
+            i = !0
+        });
+        return r = function () {
+            i || n(u).trigger(n.support.transition.end)
+        }, setTimeout(r, t), this
+    };
+    n(function () {
+        n.support.transition = t()
+    })
+}(jQuery)
+
+
+/**
+ * Sticky Local Navigation
+ *
+ */
+var $grayBar = $('.persistent-gray-bar'),
+    $grayLinks = $grayBar.find("a"),
+    scrollIds = "",
+    numScrollPoints = $grayLinks.length - 1,
+    $scrollItems;
+
+//$.each($grayLinks, function (i) {
+//        scrollIds = scrollIds + $(this).attr("href");
+//});
+
+$scrollItems = $(scrollIds);
+
+$scrollItems.waypoint(function (direction) {
+    var location;
+    var $grayBar = $(".persistent-gray-bar");
+    var $el = $(this);
+    if ($el.prop("id") != "sectioncarousel") {
+        if (direction == "down") {
+            location = $el.prop("id");
+            $grayBar.find("a").removeClass("current");
+            $grayBar.find("a[href='#" + location + "']").addClass("current");
+        } else if (direction == "up") {
+            $el = $(this).prev($scrollItems);
+            location = $el.prop("id");
+            $grayBar.find("a").removeClass("current");
+            $grayBar.find("a[href='#" + location + "']").addClass("current");
+        }
+    }
+}, { offset: 48 });
+
+$('.persistent-gray-bar-wrapper').waypoint(function () {
+    $(".persistent-gray-bar").find("a").removeClass("current");
+});
+
+$('.hide-sticky').waypoint(function (direction) {
+    $grayBar = $(".fixedPosition");
+
+    if (direction == "down") {
+        $topButton.toggleClass("fadeIn");
+        $grayBar.addClass("hide");
+    } else if (direction == "up") {
+        $topButton.toggleClass("fadeIn");
+        $grayBar.removeClass("hide");
+    }
+}, { offset: 48 });
+
+function setLocalNavHeight() {
+    $('.persistent-gray-bar-wrapper').height(49);
+}
+
+function bindLocalNavCustom() {
+
+    $('.persistent-gray-bar-wrapper').css("min-height", "49px");
+    $(".persistent-gray-bar-wrapper nav").stalker({
+        stalkerStyle: "fixedPosition",
+        startCallback: function () {
+            //if(videoAPI !== null) {
+            //    videoAPI.pause();
+            //}
+            $(".persistent-gray-bar").find("a:first").addClass("current");
+        },
+        stopCallback: function () {
+            //if(videoAPI !== null) {
+            //    videoAPI.play();
+            //}
+            $(".persistent-gray-bar").find("a").removeClass("current");
+        }
+    });
+}
+
+$('.hide-sticky').waypoint(function (direction) {
+    $localNav = $(".fixedPosition");
+
+    if (direction == "down") {
+        $topButton.toggleClass("fadeIn");
+        $localNav.addClass("hide");
+    } else if (direction == "up") {
+        $topButton.toggleClass("fadeIn");
+        $localNav.removeClass("hide");
+    }
+}, { offset: 48 });
+
+/**
+ * Alert boxes
+ */
+$(".alert-close").on("click", function (e) {
+    e.preventDefault();
+
+    var $el = $(this);
+    var $alert = $el.closest(".alert");
+    var top = $alert.height() / 2;
+
+    $el.css("top", top);
+
+    if (Modernizr.csstransitions) {
+        $alert.addClass("hide");
+    } else {
+        $alert.slideUp();
+    }
+});
+
+$.localScroll.hash({
+    queue: true,
+    duration: 1500
+});
+
+
+
+// Fastclick
+//FastClick.attach(document.body);
+
+//bindLocalNav();
+bindLocalNavCustom();
+
+var videoAPI = null;
+
+function homePage(func) {
+    // Default variables for video background
+    var windowWidth = $(window).width(),
+        mobileBreakpoint = 768,
+        pb = null;
+
+    // Responsive
+    $(window).on('resize', function () {
+        var $header = $('.header');
+        windowWidth = $(window).width();
+
+        if (windowWidth > mobileBreakpoint) {
+            // Desktop
+            if (!videoAPI) {
+                videoAPI = loadWistia();
+            }
+
+            var newSize = resizeToCover(videoAPI.width(), videoAPI.height(), $header.width(), $header.height());
+
+            // Resize video to cover header
+            videoAPI.height(newSize.height).width(newSize.width).play();
+
+            // Center video
+            $(".wistia_embed").css({ "position": "relative", "left": newSize.offsetWidth, "top": newSize.offsetHeight });
+
+            $('.grid-carousel-wrap').flexslider({
+                slideshow: false,
+                animation: "slide",
+                minSlides: 1,
+                maxSlides: 1,
+                margin: 0,
+                move: 1,
+                controlNav: false,
+                directionNav: false,
+                prevText: "",
+                nextText: "",
+                start: function (slider) {
+                    $('.carousel-nav-left').on("click", function (e) {
+                        e.preventDefault();
+                        slider.flexAnimate(slider.getTarget("prev"));
+                    });
+                    $('.carousel-nav-right').on("click", function (e) {
+                        e.preventDefault();
+                        slider.flexAnimate(slider.getTarget("next"));
+                    });
+                }
+            });
+
+            // Run callback function
+            if (typeof func == 'function') {
+                func();
+            }
+
+        } else {
+            if (videoAPI !== null) {
+                videoAPI.pause();
+            }
+
+            // Mobile Flexslider
+            $('.mobile-slider').flexslider({
+                slideshow: false,
+                animation: "slide",
+                width: 220,
+                minSlides: 1,
+                maxSlides: 3,
+                margin: 1,
+                move: 1,
+                controlNav: false,
+                directionNav: true,
+                prevText: "",
+                nextText: "",
+
+            });
+        }
+    }).resize();
+}
+
+
+function aboutPage() {
+    $('.full-slider').flexslider({
+        slideshow: false,
+        animation: "slide",
+        minSlides: 1,
+        maxSlides: 1,
+        margin: 0,
+        move: 1,
+        controlNav: false,
+        directionNav: true,
+        prevText: "",
+        nextText: "",
+
+    });
+    $('.history-slider').flexslider({
+        slideshow: false,
+        animation: "slide",
+        minSlides: 1,
+        maxSlides: 1,
+        margin: 0,
+        move: 1,
+        controlNav: true,
+        directionNav: true,
+        prevText: "<span class='icon-chevron-left'></span>",
+        nextText: "<span class='icon-chevron-right'></span>",
+    });
+}
+
+
+
+// Due to JQuery being loaded in the header, need to load JQuery selected items after page load, since the items need to exist to apply.
+$(document).ready(function () {
+
+    if (location.protocol != 'https:') {
+        location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+    }
+
+    // Mobile nav push menu
+    $("#menu-btn, .main-overlay").on("click", function (e) {
+        e.preventDefault();
+        togglePushNav();
+        window.scrollTo(0, 0);
+        $(this).blur();
+    });
+
+    $mpDropdown = $(".mp-dropdown");
+    $(".toggle-mp-dropdown").on("click", function (e) {
+
+        e.preventDefault();
+        $mpDropdown.toggleClass('on');
+    });
+
+    // Mobile nav search
+    $("#menu-search-btn").on("click", function (e) {
+        e.preventDefault();
+        var $icon = $(this).find("span"),
+            $mSearch = $(".mobile-search-wrapper");
+        if ($icon.hasClass('fa-search')) {
+            $mSearch.addClass('on').find(".search-box").focus();
+            $icon.removeClass('fa-search').addClass('fa-caret-up');
+        } else {
+            $mSearch.removeClass('on').find(".search-box").blur();
+            $icon.removeClass('fa-caret-up').addClass('fa-search');
+        }
+    });
+
+    // Push Navigation
+    var $pushNav = $(".push-nav"),
+        $mobileNav = $('.mobile-nav');
+
+    $pushNav.find(".mp-back-btn").on("click", function (e) {
+        e.preventDefault();
+        $(this).closest(".mp-level").removeClass("mp-push");
+    });
+    $pushNav.find("li > a").on("click", function (e) {
+        if ($(this).parent().find("ul > li").length > 0) {
+            e.preventDefault();
+            $(this).next().addClass("mp-push");
+        }
+    });
+
+    //dropdown menus 9/23/16 -kpw
+    //$Dropdown = $(".dropdown");
+    $(".toggle-dropdown").on("click", function (e) {
+        e.preventDefault();
+        //this.toggleClass('open');
+    });
+});

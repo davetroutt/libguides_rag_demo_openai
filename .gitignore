@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.env
+virtual/
+
+# FAISS Index
+# faiss_index/
+# So simple so you can live in the repo
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db

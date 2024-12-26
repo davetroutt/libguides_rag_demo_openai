@@ -1,0 +1,157 @@
+How to Craft Prompts  - Artificial Intelligence (Generative) Resources - Guides at Georgetown University
+Skip to Main Content
+User account menu
+Your Account
+Toggle navigation menu
+Services
+Borrow & Renew
+Interlibrary & Consortium Loans
+Request & Pick Up
+Course Reserves
+Office Delivery
+Equipment
+Disability Support
+Printing & Scanning
+Off-Campus Access
+Software
+LinkedIn Learning
+Research
+Research Consultations
+Research & Course Guides
+Citation Tools
+Subject Librarians
+Digital Scholarship
+Data Services
+Design & Create
+Digital Publishing
+Scholarly Communication
+Copyright
+Articles & Databases
+Collections
+Rare Books, Manuscripts, Art & Archives
+Articles & Databases
+DigitalGeorgetown
+Library Catalogs
+Audio & Video Collection
+Slavery, Memory & Reconciliation
+Exhibitions
+Library Maps & Call Number Locations
+Spaces
+Study Spaces
+Computing Spaces
+Meeting & Instruction Spaces
+Maker Hub
+Digital Media Studios
+Gelardin Center
+Booth Family Center for Special Collections
+Writing Center
+Carrels & Lockers
+Bioethics Research Library
+Blommer Science Library
+Lauinger Library
+Georgetown University in Qatar Library
+School of Continuing Studies Library
+All Georgetown Libraries
+About
+Hours
+Maps & Directions
+Events
+Give to the Library
+Policies
+Contact Us
+Staff Directory
+Library Departments
+Library Showcase
+Library Guides Research Guides Artificial Intelligence (Generative) Resources How to Craft Prompts
+Search this Guide Search
+Artificial Intelligence (Generative) Resources
+Home AI Fundamentals AI Tools for Research How to Craft Prompts  Why craft good prompts? The CLEAR Framework Library Resources on Prompts Writing Prompts for Images Research Resources on AI Latest News on AI Ethics & AI Citing Generative AI  AI, Authorship, & Copyright Campus Resources and Policies
+Other Prompt Engineering Frameworks
+The  Prompt Engineering Guide  by DAIR.AI has many more techniques and guidelines for prompt engineering:
+General Tips for Prompts
+Chain-of-Thought Prompting
+Generate Knowledge Prompting
+Why craft good prompts?
+A  prompt  is (technically speaking) input to an AI tool. For research AI tools, the prompt is almost always a question, request, or topic posed by you, the human researcher. Why should you try to write good prompts?
+Good prompts help the AI help you.  A well-crafted prompt enables the AI to give you meaningful and useful results. A bad prompt may result in irrelevant data or lead you away from the best research.
+Good prompts are cheap(er).  Many AI research tools charge per task - each search costs you “credits” and (ultimately) money. A good prompt can help you get the desired output without a lot of repeated searches, easier on the pocketbook and a less waste of time for you.
+The CLEAR Framework
+Good prompts are CLEAR – a framework developed by Leo Lo, a librarian and professor at the University of New Mexico.
+Good
+Needs Improvement
+Concise  (also Clear) - Focus on the key words for the AI tool to analyze. Try to omit as many needless words* as possible.
+Identify the top reasons undergraduate students attend Georgetown University.
+I am trying to figure out if I should be applying to Georgetown and if I would like it there.
+(The AI doesn't know you or your preferences, there are multiple "Georgetown" institutions, & are you applying to high school? Undergrad? Grad school?)
+Logical -  Most AI tools look for relationships between words and concepts, so make sure your query presents concepts accurately and in their natural or logical order.
+If your question doesn’t make sense to you (or to someone else), it probably won’t make sense to the AI!
+Summarize the most promising vaccine candidates that protect against multiple strains of influenza.
+Can we make a flu vaccine organically?
+(Are you asking about a vaccine made with eggs obtained through organic farming? A vaccine developed through "organic" research? Something else?)
+Explicit -  Be clear in what you want from the AI. Giving the AI tool clear output directions can help the AI produce an answer that is useful to you.
+Give me a concise summary of the major strengths and weaknesses of Georgetown University.
+What’s Georgetown University like?
+(What's your comparison for Georgetown? Do you want a short answer or a long one?)
+Even the best prompts may need improvement! The last two components address what to do after you’ve examined the AI’s answer to your initial prompt.
+Adaptive -  Try a second prompt with keywords or topics suggested by the AI in its answer. If the AI tool has seeding or guidance settings, investigate different settings - do you get better results? If the tool allows you to specify words/concepts to exclude or ignore, can you refine your prompt by excluding concepts?
+Prompt 1:   Why doesn’t Georgetown have a Metro station?
+Answer:  (includes "geological obstacles")
+Prompt 2:  What are  the engineering challenges and geological obstacles  to constructing a Metro station in Georgetown?
+Reflective  -  Always take a moment to reflect on the AI’s answer. Does it make intuitive sense to you? Does the answer refer to current research (if important for your query), or does it seem based on older research?  Has the AI “hallucinated” or returned inaccurate information? Is the answer complete, or are there perspectives or voices unrepresented in the answer?
+You may need to craft additional prompts that specifically target gaps in the initial answer.
+Prompt 1:  Give me a concise summary of the major strengths and weaknesses of Georgetown University.
+Prompt 2:  Give me a concise summary of the major strengths and weaknesses of Georgetown University,  from the perspective of a first-generation college student .
+Read more about the CLEAR framework in Lo, L. S. (2023). The CLEAR path: A framework for enhancing information literacy through prompt engineering.  The Journal of Academic Librarianship , 49(4), 102720–.  https://doi.org/10.1016/j.acalib.2023.102720
+*Strunk, W. & White, E.B. (2005).  The Elements of Style.  Penguin. (Original work published 1979)
+Library Resources on Prompts
+Library Books and Journals on Prompt Engineering
+Prompt writing is a rapidly evolving field and papers are coming out every week (it seems). In addition to those listed below, the books and other resources on our  Research Resources for AI  page often contain chapters or sections on writing prompts. Use the HoyaSearch link (bottom of list) for more resources.
+Baker, P. (2023).  ChatGPT . John Wiley & Sons, Inc.
+Part of the popular "For Dummies" series. Includes a chapter on prompt engineering.
+Hatakeyama-Sato, K., Yamane, N., Igarashi, Y., Nabae, Y., & Hayakawa, T. (2023).  Prompt engineering of GPT-4 for chemical research: what can/cannot be done?   Science and Technology of Advanced Materials: Methods , 3(1).  https://doi.org/10.1080/27660400.2023.2260300
+Can GPT-4 usefully assist chemical researchers? "When examining each task specifically, GPT-4 exhibited a high understanding of general textbook-level knowledge in the field of organic chemistry. However, it fell short when dealing with specialized content or unique methods of synthesizing specific compounds." The supplemental material has example prompts.
+Henrickson, L., & Meroño-Peñuela, A. (2023).  Prompting meaning: a hermeneutic approach to optimising prompt engineering with ChatGPT.   AI & Society .  https://doi.org/10.1007/s00146-023-01752-8
+ChatGPT will always give you an answer, but is that answer meaningful? Is it possible to be too specific in prompts? Henrickson and Meroño-Peñuela use the philosophy of hermenutics to explore this question.
+HoyaSearch: Prompts and Artificial Intelligence
+More results from HoyaSearch, the Library Catalog, on prompts.
+Library Video Tutorials on Prompt Engineering
+Prefer to watch a video? The Library has several video tutorials on writing good prompts:
+Birss, D. (2023, March). H ow to Research and Write Using Generative AI Tools: Meet your AI creative collaborator . [Video] LinkedIn Learning.
+How to write prompts and use AI tools in a variety of examples: summarizing info, discovering new models, improving your writing. From LinkedIn Learning; free LiL account required for viewing. (1h 15m)
+Dichone, P. (2023).  ChatGPT mastery: crafting effective prompts for optimal results . [Video] Packt Publishing, hosted by O'Reilly Media.
+Video course from O'Reilly on writing prompts for ChatGPT. Includes examples on using ChatGPT to write a book and generate code. (2h 18m)
+Sheer, R. (2023, March).  Introduction to Prompt Engineering for Generative AI: Joining the NLP Revolution .  [Video] LinkedIn Learning.
+Writing good prompts for ChatGPT and image AI tools such as DALL-E and Midjourney. From LinkedIn Learning; free account required for viewing. (44m)
+Writing Prompts for Images
+" Image Generation: Usage ." (n.d.)  OpenAI Documentation . Retrieved October 26, 2023, from  https://platform.openai.com/docs/introduction
+Techniques on working with DALL-E (OpenAI's image tool)
+Rebelo, M. (2023, May 25).  How to write effective AI art prompts . Zapier.com.  https://zapier.com/blog/ai-art-prompts/
+A quick but very useful read on crafting prompts for AI image tools.
+<<  Previous:  AI Tools for Research Next:  Research Resources on AI >>
+Last Updated:   Nov 21, 2024 1:40 PM
+URL:   https://guides.library.georgetown.edu/ai
+Print Page
+Login to LibApps
+Report a problem
+Subjects:  Artificial Intelligence
+This work is licensed under a  Creative Commons Attribution NonCommercial 4.0 International License . |  Details of our policy
+Contact Us
+Directory
+Visit
+Maps
+Services
+Research
+Collections
+Spaces
+About
+Instagram
+Facebook
+YouTube
+Georgetown University Library
+37th & O Streets, N.W.
+Washington, D.C. 20057-1174
+202-687-7607
+Privacy Policy
+Copyright
+Web Accessibility
+Notice of Non-Discrimination

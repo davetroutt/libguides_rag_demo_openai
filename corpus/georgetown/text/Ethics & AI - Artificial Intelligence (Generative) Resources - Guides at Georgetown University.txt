@@ -1,0 +1,149 @@
+Ethics & AI - Artificial Intelligence (Generative) Resources - Guides at Georgetown University
+Skip to Main Content
+User account menu
+Your Account
+Toggle navigation menu
+Services
+Borrow & Renew
+Interlibrary & Consortium Loans
+Request & Pick Up
+Course Reserves
+Office Delivery
+Equipment
+Disability Support
+Printing & Scanning
+Off-Campus Access
+Software
+LinkedIn Learning
+Research
+Research Consultations
+Research & Course Guides
+Citation Tools
+Subject Librarians
+Digital Scholarship
+Data Services
+Design & Create
+Digital Publishing
+Scholarly Communication
+Copyright
+Articles & Databases
+Collections
+Rare Books, Manuscripts, Art & Archives
+Articles & Databases
+DigitalGeorgetown
+Library Catalogs
+Audio & Video Collection
+Slavery, Memory & Reconciliation
+Exhibitions
+Library Maps & Call Number Locations
+Spaces
+Study Spaces
+Computing Spaces
+Meeting & Instruction Spaces
+Maker Hub
+Digital Media Studios
+Gelardin Center
+Booth Family Center for Special Collections
+Writing Center
+Carrels & Lockers
+Bioethics Research Library
+Blommer Science Library
+Lauinger Library
+Georgetown University in Qatar Library
+School of Continuing Studies Library
+All Georgetown Libraries
+About
+Hours
+Maps & Directions
+Events
+Give to the Library
+Policies
+Contact Us
+Staff Directory
+Library Departments
+Library Showcase
+Library Guides Research Guides Artificial Intelligence (Generative) Resources Ethics & AI
+Search this Guide Search
+Artificial Intelligence (Generative) Resources
+Home AI Fundamentals AI Tools for Research How to Craft Prompts  Research Resources on AI Latest News on AI Ethics & AI Misinformation & Bias in AI Artificial Intelligence and Academic Integrity Privacy and AI Citing Generative AI  AI, Authorship, & Copyright Campus Resources and Policies
+Misinformation & Bias in AI
+Misinformation
+While generative AI tools can help users with such tasks as brainstorming for new ideas, organizing existing information, mapping out scholarly discussions, or summarizing sources, they are also notorious for not relying fully on factual information or rigorous research strategies. In fact, they are known for producing  "hallucinations,"  an AI science term used to describe false information created by the AI system to defend its statements. Oftentimes, these "hallucinations" can be presented in a very confident manner and consist of partially or fully fabricated citations or facts.
+Certain AI tools have even been used to intentionally produce false images or audiovisual recordings to spread misinformation and mislead the audience. Referred to as  "deep fakes,"  these materials can be utilized to subvert democratic processes and are thus particularly dangerous.
+Additionally, the information presented by generative AI tools  may lack currency  as some of the systems do not necessarily have access to the latest information. Rather, they may have been trained on past datasets, thus generating dated representations of current events and the related information landscape.
+Bias
+Another potentially significant limitation of AI is the  bias  that can be embedded in the products it generates. Fed immense amounts of data and text available on the internet, these large language model systems are trained to simply predict the most likely sequence of words in response to a given prompt, and will therefore reflect and perpetuate the biases inherent in the inputted internet information. An additional source of bias lies in the fact that some generative AI tools utilize reinforcement learning with human feedback (RLHF), with the caveat that the human testers used to provide this feedback are themselves non-neutral. Accordingly, generative AI like ChatGPT is documented to have provided output that is socio-politically biased, occasionally even containing sexist, racist, or otherwise offensive information.
+Related Recommendations
+Meticulously fact-check all of the information produced by generative AI, including verifying the source of all citations the AI uses to support its claims.
+Critically evaluate all AI output for any possible biases that can skew the presented information.
+Avoid asking the AI tools to produce a list of sources on a specific topic as such prompts may result in the tools fabricating false citations.
+When available, consult the AI developers' notes to determine if the tool's information is up-to-date.
+Always remember that generative AI tools are not search engines--they simply use large amounts of data to generate responses constructed to "make sense" according to common cognitive paradigms.
+Selected Readings
+Alkaissi, H., & McFarlane, S. I. (2023).  Artificial hallucinations in ChatGPT: Implications in scientific writing.   Curēus ,  15 (2), e35179–e35179. https://doi.org/10.7759/cureus.35179
+Bowman, E. (2022, December 19).  A new AI chatbot might do your homework for you. But it's still not an A+ student . NPR.
+De Vynck, G. (2023, August 16).  ChatGPT leans liberal, research shows .  The Washington Post .
+Drahl, C. (2023, October 6).  AI was asked to create images of Black African docs treating white kids. How'd it go? .  NPR.
+Metz, C. (2021, March 15).  Who is making sure the A.I. machines aren’t racist?   New York Times  [Digital Edition].
+Walters, W. H., & Wilder, E. I. (2023).  Fabrication and errors in the bibliographic citations generated by ChatGPT .  Scientific Reports ,  13 (1), 14045–14045. https://doi.org/10.1038/s41598-023-41032-5
+Artificial Intelligence and Academic Integrity
+Plagiarism
+Generative AI tools have introduced new challenges in academic integrity, particularly related to plagiarism.
+Plagiarism is typically defined as  presenting someone else's work or ideas as one's own . While a generative AI tool might not qualify as a "someone," using text generated from an AI tool without citing is still considered plagiarism, according to  Georgetown University Honor Council , because the work is still not the researcher's own. Individual policies for using and crediting GAI tools might vary from class to class, so looking at the syllabus and having a clear understanding from the professor is important.
+A note about  plagiarism detection tools :
+A number of AI detection tools are currently available to publishers and institutions, but there are concerns about low rates of accuracy and false accusations. Because generative AI tools do not generate large amounts of text word-for-word from existing works, it can be difficult for automated tools to detect plagiarism. Georgetown does not currently use the AI detection feature of its plagiarism detection tool, Turnitin.
+False Citations
+Another area of academic integrity affected by GAI tools is that of false citations.
+Providing false citations in research, whether intentional or unintentional, violates the  Honor Council's Standards of Conduct . GAI tools such as ChatGPT have been known to generate false citations, and even if the citations represent actual papers, the cited content in ChatGPT might still be inaccurate.
+Related Recommendations
+If GAI tools are only permitted to be used for topic development, in the early stages of research, you might not need to cite them at all, but it's still important to check with your professor first.
+If you are providing commentary or analysis on the text generated by a chatbot and are either paraphrasing its results or quoting it directly, a citation is always required. You can find more information on citing GAI tools on this guide's  Citing Generative AI  page.
+If you are a researcher planning to publish in a journal, it is best to review that journal's policies on the permitted use of Generative AI tools. (See 'Selected Readings' below for a couple of examples of journal policies.)
+It's important to always look up citations and check to make sure they are accurate, and if you're citing information from that source, to cite the original source rather than ChatGPT or whichever GAI tool you're using.
+Selected Readings
+"Artificial intelligence: Editorial policies."  (2023).  Nature .
+Hoover, A. (2023, August 17).  Use of AI Is Seeping Into Academic Journals—and It’s Proving Difficult to Detect .  Wired .
+Liang, W., Yuksekgonul, M., Mao, Y., Wu, E., & Zou, J. (2023).  GPT detectors are biased against non-native English writers.   Patterns .
+" Science  journals: Editorial policies - authorship."  (2023)  Science .
+Staiman, A. (2023, September 14).  Publishers, Don’t Use AI Detection Tools!   The Scholarly Kitchen.
+Privacy and AI
+Breaches of Privacy & Danger of Re-Identification
+There are currently also multiple privacy concerns associated with the use of generative AI tools. The most prominent issues revolve around the possibility of a  breach of personal/sensitive data  and  re-identification . More specifically, most AI-powered language models, including ChatGPT, require for users to input large amounts of data to be trained and generate new information products effectively. This translates into personal or sensitive user-submitted data becoming an integral part of the collection of material used to further train the AI without the explicit consent of the user. Moreover, certain generative AI policies even permit AI developers to profit off of this personal/sensitive information by selling it to third parties. Even in cases when clear identifying personal information is not entered by AI user, the utilization of the system carries a risk of re-identification as the submitted dataset may contain patterns allowing for the generated information to be linked back to the individual or entity.
+Given these issues, extensive downloading of Library materials to build AI training corpora is prohibited. Additionally, some Library content providers prohibit any amount of their content being used with AI tools (please see  Library's Policy on Responsible Use of Electronic Resources) .
+Related Recommendations
+Avoid sharing any personal or sensitive information via the AI-powered tools.
+Do not download Library materials (i.e., articles, ebooks, infographics, psychographics, or other datasets) into AI as it is prohibited.
+Always review the privacy policy of the generative AI tools before utilizing them. Be cautious about policies that permit for the inputted data to be freely distributed to third-party vendors and/or other users.
+Selected Readings
+Gupta, M., Akiri, C., Aryal, K., Parker, E., & Praharaj, L. (2023).  From ChatGPT to ThreatGPT: Impact of generative AI in cybersecurity and privacy .  IEEE Access ,  11 , 80218–80245. https://doi.org/10.1109/ACCESS.2023.3300381
+Hunter, T. (2023, April 28).  Why you shouldn’t tell ChatGPT your secrets .  The Washington Post .
+Schneier, B., & Sanders, N. (2023, July 20).  Can you trust AI? Here’s why you shouldn’t .  The Conversation U.S .
+Shafiq , M  (2023, September 25).  Understanding the ethics of data generative AI: Privacy concerns and solutions . LinkedIn.
+<<  Previous:  Latest News on AI Next:  Citing Generative AI  >>
+Last Updated:   Nov 21, 2024 1:40 PM
+URL:   https://guides.library.georgetown.edu/ai
+Print Page
+Login to LibApps
+Report a problem
+Subjects:  Artificial Intelligence
+This work is licensed under a  Creative Commons Attribution NonCommercial 4.0 International License . |  Details of our policy
+Contact Us
+Directory
+Visit
+Maps
+Services
+Research
+Collections
+Spaces
+About
+Instagram
+Facebook
+YouTube
+Georgetown University Library
+37th & O Streets, N.W.
+Washington, D.C. 20057-1174
+202-687-7607
+Privacy Policy
+Copyright
+Web Accessibility
+Notice of Non-Discrimination

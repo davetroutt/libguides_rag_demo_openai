@@ -1,0 +1,38 @@
+Searching literature - AI Tools for Research - Research Guides at Temple University
+Skip to Main Content
+University Libraries
+Libraries Research Guides Topic Guides AI Tools for Research Searching literature
+Search this Guide Search
+AI Tools for Research
+This guide offers advice on AI-powered tools and functionality created for or used in academic research.
+Home Assessing AI research tools Popular chatbots and research AI in library subscriptions Searching literature Searching with AI tools Multi-functional AI "research assistants" Tools for literature searching Related guides Mapping literature Summarizing literature AI and evidence synthesis Working with data Writing code Presenting and publishing Get help
+Searching with AI tools
+The following tools aim to help you find research on a topic. They all have AI- or machine learning-based features, such as semantic search, text summarization, conversational interfaces, and more.
+Important notes:
+Most tools search one or more open indexes of scholarly literature such as Semantic Scholar, CrossRef, OpenAlex, Dimensions, and others. Some of these sources have >200 million records and others are more restricted. None are as large as  Google Scholar , which is  estimated  to have almost 400 million records (including a large amount of gray literature indexed by automated web crawlers). Check the tool's help documentation for information about its sources. See  this Wikipedia page  for a sortable list of the largest literature indexes, and the  SearchSmart website  for a handy disciplinary comparison tool.
+Access to citation/abstract metadata and full open access articles still omits a vast amount of scholarly research contained in full-text paywalled articles. An AI tool's responses and summaries will be limited by the exact nature of its access.
+Tools with a connection to scholarly literature do not tend to make up fake citations, but they may cite a real reference in a way that misrepresents its contents.
+None of these tools are appropriate for systematic review searching, which requires explicit search strategies that are transparent, documented, and reproducible. For help with systematic review searching, contact our service team through the  Evidence Synthesis & Systematic Reviews page .
+Off campus access to full text Easily get the full text of paywalled articles using Temple Libraries'  LibKey Nomad browser extension , or our  off-campus access bookmarklet . LibKey Nomad gives one-click access to scholarly articles through the Nomad icon that appears as you browse the web. The bookmarklet quickly reloads any webpage through the Libraries' remote access proxy server.
+Multi-functional AI "research assistants"
+Elicit A multifunctional research assistant with a free basic tier. Searches ~125 million items from Semantic Scholar, which only includes open access full text. Extracts information from PDFs, allows PDF upload, and has a Zotero integration. Read more about the free vs. paid plans in  Elicit's Help Center . Scispace Multi-functional research assistant tool with a free tier. Includes AI summarizing, information extraction, personalization features, Chrome browser extension, Zotero integration, and other utilities. Literature search draws on a corpus of >150 million items.  Writing assistant portion has a freemium model.
+Use the  SciSpace Chrome browser extension  to enhance   Google Scholar  search results. The extension will put icons on your results page that allow you to chat with a search result, find similar papers, or run the same search in SciSpace.
+Tools for literature searching
+Consensus Searches Semantic Scholar database using a  proprietary combination of semantic and keyword search . Uses AI to extract, aggregate, and summarize findings based on the top few search results. Free accounts can make unlimited searches and can bookmark articles and save searches.  Dimensions Research GPT A freely available, tailored version of ChatGPT that is connected to Dimensions data and offers answers based on Open Access publications. Results include references to source material. jenni Searches for relevant research as you write a document.  Substantial free tier, allows uploads of your own sources, including PDFs. Keenious Searches for relevant research as you write in a Word or Google Doc. Can also search for research based on a seed article you supply.  Perplexity An "answer engine" that includes web search and has an interface similar to popular, standalone chatbots. Perplexity has free access to scholarly research plug-ins. Set Focus=Academic to search Semantic Scholar and PubMed. Set Focus=Wolfram Alpha for data discovery, visualization, and mathematical calculation. Accepts file uploads. See  the Perplexity FAQ  for help documentation. R Discovery Literature search tool with other features like recommended feeds based on your preferred topics, a journal recommender and an AI writing assistant. Semantic Scholar   This link opens in a new window Note:  Temple users, choose "Sign in with your Institution," to enable full-text article access, save papers to your library, and create custom alerts.Semantic Scholar is a  free and non-profit  AI-powered academic search engine from the Allen Institute for AI with >200 million items covering all disciplines. Has many personalization features, AI-generated TLDR summaries,  Semantic Reader  with personalized annotation and skimming tools, Research Feed search alerts, easy citation manager exporting, and an Ask This Paper AI chatbot. Extensive  help documentation in the FAQ . Undermind.ai A "deep search" tool with 10 free searches per month. Takes a verbose user prompt and searches over titles and abstracts in Semantic Scholar. This is an agent-style tool that runs multiple searches and learns from the results, yielding more comprehensive search results than many other tools. The company's own benchmarking claims to find it better than Google Scholar. Details in  their whitepaper .
+Related guides
+Connect to Resources from Off-Campus
+by Erin Finnerty
+Last Updated Aug 22, 2024
+1008 views this year
+<<  Previous:  AI in library subscriptions Next:  Mapping literature >>
+Last Updated:   Nov 20, 2024 11:41 AM
+URL:   https://guides.temple.edu/ai-research-tools
+Print Page
+Login to LibApps
+Report a broken link or other problem .
+Tags:  AI ,  AI assistants ,  AI coding ,  AI ethics ,  artificial intelligence ,  chatbots ,  ChatGPT ,  digital literacy ,  GenAI ,  generative AI ,  literature mapping ,  literature search ,  Research Assistants ,  research skills ,  research tools ,  semantic search
+Temple University
+University Libraries
+See all library locations
+Library Directory Locations and Directions Frequently Called Numbers
+Need help?  Email us  at asktulibrary@temple.edu

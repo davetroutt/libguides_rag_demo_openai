@@ -1,0 +1,159 @@
+AI Tools for Research - Artificial Intelligence (Generative) Resources - Guides at Georgetown University
+Skip to Main Content
+User account menu
+Your Account
+Toggle navigation menu
+Services
+Borrow & Renew
+Interlibrary & Consortium Loans
+Request & Pick Up
+Course Reserves
+Office Delivery
+Equipment
+Disability Support
+Printing & Scanning
+Off-Campus Access
+Software
+LinkedIn Learning
+Research
+Research Consultations
+Research & Course Guides
+Citation Tools
+Subject Librarians
+Digital Scholarship
+Data Services
+Design & Create
+Digital Publishing
+Scholarly Communication
+Copyright
+Articles & Databases
+Collections
+Rare Books, Manuscripts, Art & Archives
+Articles & Databases
+DigitalGeorgetown
+Library Catalogs
+Audio & Video Collection
+Slavery, Memory & Reconciliation
+Exhibitions
+Library Maps & Call Number Locations
+Spaces
+Study Spaces
+Computing Spaces
+Meeting & Instruction Spaces
+Maker Hub
+Digital Media Studios
+Gelardin Center
+Booth Family Center for Special Collections
+Writing Center
+Carrels & Lockers
+Bioethics Research Library
+Blommer Science Library
+Lauinger Library
+Georgetown University in Qatar Library
+School of Continuing Studies Library
+All Georgetown Libraries
+About
+Hours
+Maps & Directions
+Events
+Give to the Library
+Policies
+Contact Us
+Staff Directory
+Library Departments
+Library Showcase
+Library Guides Research Guides Artificial Intelligence (Generative) Resources AI Tools for Research
+Search this Guide Search
+Artificial Intelligence (Generative) Resources
+Home AI Fundamentals AI Tools for Research AI Research Tools Additional AI Tools How to Craft Prompts  Research Resources on AI Latest News on AI Ethics & AI Citing Generative AI  AI, Authorship, & Copyright Campus Resources and Policies
+About This Table
+The resources described in the table represent an incomplete list of tools specifically geared towards exploring and synthesizing research. As generative AI becomes more integrated in  online   search tools , even the very early stages of research and topic development could incorporate AI. If you have any questions about using these tools for your research, please  Email a Librarian .
+AI Research Tools
+AI tools for research can help you to discover new sources for your literature review or research assignment. These tools will synthesize information from large databases of scholarly output with the aim of finding the most relevant articles and saving researchers' time. As with our research databases or any other search tool, however, it's important not to rely on one tool for all of your research, as you will risk missing important information on your topic of interest.
+NAME
+WHAT IT DOES
+UNDERLYING DATA
+IS IT FREE?
+MORE INFORMATION
+Elicit
+Using large language models (LLMs), Elicit finds papers relevant to your topic by searching through papers and citations and extracting and synthesizing key information.
+Semantic Scholar Database
+Free with paid subscriptions available.
+Elicit FAQs
+Perplexity
+Using LLMs, perplexity is a search engine that provides AI-generated answers (much like ChatGPT) including citations which are linked above the summaries.
+Internal search index
+Free with paid subscriptions available.
+Perplexity FAQs
+Consensus
+Similar to Elicit, Consensus uses LLMs to help researchers find and synthesize answers to research questions, focusing on the scholarly authors' findings and claims in each paper.
+Semantic Scholar Database
+Free (20 searches/month); Paid version allows unlimited searching.
+Consensus FAQs
+Semantic Scholar
+Semantic Scholar (which supplies underlying data for many of the other tools on this list) provides brief summaries ('TLDR's) of the main objectives and results of papers.
+Semantic Scholar Database
+Semantic Scholar is currently free.
+Semantic Scholar FAQs
+Research Rabbit
+Research Rabbit is a citation-based mapping tool that focuses on the relationships between research works. It uses visualizations to help researchers find similar papers and other researchers in their field.
+Research Rabbit uses multiple databases, but does not name them (more information can be found on the  FAQ page ).
+Research Rabbit is currently free.
+Research Rabbit FAQs
+Connected Papers
+Like Research Rabbit, Connected Papers focuses on the relationships between research papers to find similar research. You can also use Connected Papers to get a visual overview of an academic field.
+Semantic Scholar Database
+Free (5 graphs/month); paid version allows unlimited graphing.
+Connected Papers - About
+scite
+scite has a suite of products that help researchers develop their topics, find papers, and search citations in context (describing whether the article provides supporting or contrasting evidence)
+Many different sources (an incomplete list can be found  on this page )
+No. ( Pricing information )
+scite FAQs ;  how scite works
+Scholarcy
+Scholarcy summarizes key points and claims of articles into 'summary cards' that researchers can read, share, and annotate when compiling research on a given topic.
+Scholarcy only uses  research papers uploaded or linked by the researcher themselves . It works as a way to help you read and summarize your research, but is not a search engine.
+Free (short articles only); Paid version allows articles of any length.
+Scholarcy FAQs
+ChatGPT
+While the AI chatbot ChatGPT is typically thought of as a writing tool, it can be used in the initial idea development phase of research, and can also be of use in finding further sources. (Remember to always look up sources to verify their credibility.)
+The  paid versions of ChatGPT are currently connected to the internet through Bing . The free version was trained on data last updated in September 2021, but that might change in the future.
+There is a free version available.
+OpenAI Help Center - ChatGPT
+Gemini
+Designed by Google, Gemini (formerly Bard) is an AI-powered chatbot that responds to natural language queries with relevant information. As with ChatGPT, researchers can use Gemini to aid in topic development and initial source discovery.
+Gemini can currently connect to the Internet.
+Gemini is currently free to use. (Personal Google account required, does not work with GU accounts.)
+Gemini FAQ
+Additional AI Tools
+Additional AI Tools
+Georgetown University's Center for New Designs in Learning and Scholarship (CNDLS) offers a  list of additional AI tools  with a range of different purposes including visual design, writing, time management, and more.
+Ithaka S+R has created a  Generative AI Product Tracker  which lists tools by their primary purposes and includes pricing information, as well as updates on the tools' features and limitations.
+<<  Previous:  AI Fundamentals Next:  How to Craft Prompts  >>
+Last Updated:   Nov 21, 2024 1:40 PM
+URL:   https://guides.library.georgetown.edu/ai
+Print Page
+Login to LibApps
+Report a problem
+Subjects:  Artificial Intelligence
+This work is licensed under a  Creative Commons Attribution NonCommercial 4.0 International License . |  Details of our policy
+Contact Us
+Directory
+Visit
+Maps
+Services
+Research
+Collections
+Spaces
+About
+Instagram
+Facebook
+YouTube
+Georgetown University Library
+37th & O Streets, N.W.
+Washington, D.C. 20057-1174
+202-687-7607
+Privacy Policy
+Copyright
+Web Accessibility
+Notice of Non-Discrimination

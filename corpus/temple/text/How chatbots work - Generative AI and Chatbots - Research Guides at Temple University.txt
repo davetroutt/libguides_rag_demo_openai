@@ -1,0 +1,35 @@
+How chatbots work - Generative AI and Chatbots - Research Guides at Temple University
+Skip to Main Content
+University Libraries
+Libraries Research Guides Topic Guides Generative AI and Chatbots How chatbots work
+Search this Guide Search
+Generative AI and Chatbots
+This guide offers advice on generative AI chatbots and tools and how to best use them to support your work.
+Home How chatbots work How LLMs and generative AI work Explainer articles How smart is ChatGPT? Why AI is incredibly smart and shockingly stupid What chatbots do well What chatbots do less well Optimizing prompts Generative AI in web search Citing generative AI AI tools for research   This link opens in a new window Ethical, equity, and privacy concerns Get help
+How LLMs and generative AI work
+Generative AI chatbots create new content by predicting the word most statistically likely to appear next. The predictions are based on patterns observed in their training data, which contains incorrect and biased information, and post-training fine tuning using human feedback. Generative AI chatbots are not search engines and do not give a set of results in response to a specific search. They model human language, they do not "know" things.
+AI chatbot responses can often include a mix of correct and incorrect information.
+Explainer articles
+Guardian: How AI chatbots work – visual explainer A visual walk-through of how AI chatbots powered by Large Language Models, like ChatGPT or Google's Gemini (formerly Bard), work. Mozilla Explains: How does AI actually work? Becca Ricks, a Mozilla Foundation researcher, explains the basics of how AI works. AI is software that can learn patterns from information, and it exists in almost everything we use on the internet, like search engines and our social media feeds. NY Times: How does ChatGPT really work? [Requires Temple login]  New York Times columnist Kevin Roose, On Tech: A.I. Newsletter,  How Does ChatGPT Really Work?: Learning how a “large language model” operates , April 2023. Gives a good, plain language explanation of how generative AI technology works.
+How smart is ChatGPT?
+Dr. Stuart J. Russell, a Professor of Computer Science at UC Berkeley, explains Large Language Models with examples from GPT-4.
+Duration: <1 minute
+Why AI is incredibly smart and shockingly stupid
+Computer scientist Yejin Choi explains massive artificial intelligence systems like ChatGPT.
+Duration: 16:03 minutes, video highlights:
+1:32 Societal level challenges
+3:35 AI is passing the bar exam. Does that mean that it has common sense?
+9:21 Three types of data that AI is trained on
+10:55 Language models do not equal knowledge models
+<<  Previous:  Home Next:  What chatbots do well >>
+Last Updated:   Oct 17, 2024 11:53 AM
+URL:   https://guides.temple.edu/ai-chatbots
+Print Page
+Login to LibApps
+Report a broken link or other problem .
+Tags:  AI ,  AI ethics ,  artificial intelligence ,  Bard ,  Bing ,  chatbots ,  ChatGPT ,  Copilot ,  digital literacy ,  Gemini ,  generative AI ,  machine learning ,  misinformation ,  Perplexity ,  prompt engineering ,  prompt optimization
+Temple University
+University Libraries
+See all library locations
+Library Directory Locations and Directions Frequently Called Numbers
+Need help?  Email us  at asktulibrary@temple.edu

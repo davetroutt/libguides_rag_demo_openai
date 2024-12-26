@@ -1,0 +1,114 @@
+AI Tools for Research  - Artificial Intelligence (AI) - Research Guides at Purdue University Libraries
+Skip to Main Content
+Menu
+Hours
+Databases
+Ask a Librarian
+My Account
+Purdue Libraries Research Guides Subject Guides Artificial Intelligence (AI) AI Tools for Research
+Search this Guide Search
+Artificial Intelligence (AI)
+This LibGuide provides an overview of AI knowledge, the applications of AI tools in teaching and learning, and content for the AI research areas.
+Home AI Tools Generative AI Tools  AI Tools for Research   AI Tools for Systematic Review  AI Tools for Teaching and Learning   AI Tools for Writing   AI Tools for Creating Videos   AI Tools for Creating Images  AI in Research  How to Cite AI Generated Content Resources for Educators  AI in K12 Purdue AI Resources  Prompt Design AI and Ethics Copyright  Publisher Policies  Selected Journals in AI
+AI Tools for Research Comparison
+Feature
+Scite
+Elicit
+Litmaps
+Inciteful
+Research Rabbit
+Scholarcy
+Purpose
+Analyzes citation patterns for literature reviews
+Automates research workflows, especially empirical research
+Visualizes article connections through interactive maps
+Provides related papers and shows citation relationships
+Discovers and visualizes relevant literature and authors
+Summarizes research articles and creates flashcards
+Key Features
+Citation analysis
+• Displays relevant papers
+• Summarizes key information
+• Interactive maps
+• Citation tracking
+• Citation relationships
+• Multidisciplinary research support
+• Visualizations
+• Personalized recommendations
+• Summarizes articles
+• Highlights key points
+Price
+Subscription required
+Free access with Purdue Libraries
+Free with sign-up; Pro subscription available
+Free for limited use; Pro subscription for unlimited access
+Free
+Free
+Free; Scholarcy Plus at $45/year
+Best For
+Literature review and critical analysis
+Streamlining empirical research
+Exploring research connections
+Multidisciplinary research
+Discovering literature and author connections
+Simplifying reading and engagement with research articles
+Scite
+Basic Info
+How to Use
+Scite “Helps researchers better discover and understand research articles by showing how they have been cited.” Price: $20/month Scite Purdue University enterprise subscription access (FREE)
+How does scite Assistant work? Scite.ai Demo - AI-Powered Literature Search What is Scite?
+Elicit
+Basic Info
+How to Use
+Elicit Uses machine learning to help you with your research: find papers, extract key claims, summarize, brainstorm ideas, and more.” Price: users automatically get 5,000 free credits to use. After those credits run out, users need to subscript to Elicit plus: $12 per month, billed monthly $144 per year.
+Choose papers to summarize in Elicit Notebooks Systematic reviews in Elicit | Screening & extraction Use Elicit to find hundreds of relevant papers
+LitMaps
+Basic Info
+How to Use
+LitMaps "Bring your literature review to life by visualizing your papers using literature maps (Litmaps). A Litmap shows the relationships between the articles in your collection in the form of connecting lines which trace the citations for you.” Price: free basic search for up to 20 inputs, Pro $10/month unlimited inputs.
+Literature Review with Litmaps, July 2024 Webinar Top 5 Ways to Use Litmaps
+Inciteful
+Basic Info
+How to Use
+Inciteful Build a network of academic papers and we'll analyze the network to help you discover the most relevant literature.” Price: free
+Learn Your Research Field Faster With Inciteful: A New Network Analysis Tool For Research
+Research Rabbit
+Basic Info
+How to Use
+Research Rabbit A citation-based literature mapping tool. Price: free
+ResearchRabbit Demo Zotero Integration | ResearchRabbit
+Scholarcy
+Basic Info
+How to Use
+Scholarcy "An online summarizing tool that generates and converts long articles into summary flashcards." Price: $9.99/month
+Easily extract the key findings from any paper Generate a comparative analysis and compare research outcomes with Scholarcy's Research Comparison Get a plain-language summary of any paper | Scholarcy's AI-powered article summarizer How Scholarcy helps students and researchers build knowledge from academic text How to chat to your articles to understand articles with more detailhttps://www.youtube.com/watch?v=Q94t91y3CwY Summarize any article in your Zotero library in seconds What is Scholarcy? What to expect! | AI-powered article summarizer + research organisation
+<<  Previous:  Generative AI Tools Next:  AI Tools for Systematic Review >>
+Last Edited:   Dec 18, 2024 12:27 PM
+URL:   https://guides.lib.purdue.edu/ai
+Print Page
+Login to LibApps
+Report a problem
+Subjects:  Education ,  Engineering, Technology, & Computer Science ,  Faculty Resources ,  General Research
+Login to LibApps
+Report a problem.
+Follow Us
+Visit Us
+Purdue Libraries
+504 Mitch Daniels Blvd.,
+West Lafayette, IN 47907-2058
+765-494-2900
+Partners
+School of Information Studies
+Purdue University Press
+University Copyright Office
+Resources
+Directory
+Careers
+Intranet
+Contact Us
+Purdue University Libraries is a congressionally designated depository for U.S. Government information.
+Access to the government information collection is open to the public.
+In accordance with Purdue policies, all persons have equal access to Purdue University’s educational programs, services and activities, without regard to race, religion, color, sex, age, national origin or ancestry, genetic information, marital status, parental status, sexual orientation, gender identity and expression, disability or status as a veteran. See Purdue’s  Nondiscrimination Policy Statement . If you have any questions or concerns regarding these policies, please contact the Office of the Vice President for Ethics and Compliance at  vpec@purdue.edu  or 765-494-5830.
+Copyright
+©   Purdue University. All Rights Reserved.
+Accessibility  |  EA/EO University  |  Integrity Statement  |  Privacy Policy  |  Contact Us

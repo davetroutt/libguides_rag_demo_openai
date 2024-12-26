@@ -1,0 +1,30 @@
+Generative AI in web search - Generative AI and Chatbots - Research Guides at Temple University
+Skip to Main Content
+University Libraries
+Libraries Research Guides Topic Guides Generative AI and Chatbots Generative AI in web search
+Search this Guide Search
+Generative AI and Chatbots
+This guide offers advice on generative AI chatbots and tools and how to best use them to support your work.
+Home How chatbots work What chatbots do well What chatbots do less well Optimizing prompts Generative AI in web search Web searching with AI chatbots Generative AI responses in web search Citing generative AI AI tools for research   This link opens in a new window Ethical, equity, and privacy concerns Get help
+Web searching with AI chatbots
+Several popular, free chatbots include web search capabilities. These chatbots can “read” webpages and PDFs that are openly available on the web, and their chat responses are based on a mix of information extracted from these sources and knowledge from their LLM training data.
+Google Gemini Free to use. Requires signing in with a Google account. Accepts image uploads. Has internet access and allows use of embedded Google search to "double-check responses."  Connects to other Google services with optional Extensions. Stay up-to-date on Gemini features via  its Experiment update page  and see documentation in  Gemini Apps Help . Microsoft Copilot Free to use. Requires signing in with a Microsoft account. Has internet access and creates original images. Shows ads. Perplexity An "answer engine" with an interface similar to popular, standalone chatbots. Perplexity has free access to scholarly research plug-ins. Set Focus=Academic to search Semantic Scholar and PubMed. Set Focus=Wolfram Alpha for data discovery, visualization, and mathematical calculation. Accepts file uploads. See  the Perplexity FAQ  for help documentation.
+Use Perplexity's  AI Companion browser extension  for Chrome to apply its conversational search to particular domains. Set to Focus: This Domain. Try it on:  library databases , institutional repositories like  TU Scholarshare , and other scholarship aggregators, like  CORE UK .
+Use the  Chrome browser extension  to generate shorts summaries of Google Scholar search results: Do a search in  Google Scholar . Set to Focus: This Page, click Summarize, or prompt it to "Generate a short summary of each search result."
+Generative AI responses in web search
+Search engines have already been able to supply direct answers to factual questions using fact databases like  Google Knowledge Graph . Google search also has opt-in features that will include generative AI summaries and responses in your web search results.
+Google: Get AI-powered overviews & ask follow ups in Search Google: Browse web pages with generative AI-powered tools
+Other search engines include a Chat tab that allows you to quickly move your question over to a chatbot.
+Bing search Bing search includes a Copilot tab on search results. DuckDuckGo AI Chat DuckDuckGo search engine has a Chat tab on search results when using  the DuckDuckGo browser .
+<<  Previous:  Optimizing prompts Next:  Citing generative AI >>
+Last Updated:   Oct 17, 2024 11:53 AM
+URL:   https://guides.temple.edu/ai-chatbots
+Print Page
+Login to LibApps
+Report a broken link or other problem .
+Tags:  AI ,  AI ethics ,  artificial intelligence ,  Bard ,  Bing ,  chatbots ,  ChatGPT ,  Copilot ,  digital literacy ,  Gemini ,  generative AI ,  machine learning ,  misinformation ,  Perplexity ,  prompt engineering ,  prompt optimization
+Temple University
+University Libraries
+See all library locations
+Library Directory Locations and Directions Frequently Called Numbers
+Need help?  Email us  at asktulibrary@temple.edu

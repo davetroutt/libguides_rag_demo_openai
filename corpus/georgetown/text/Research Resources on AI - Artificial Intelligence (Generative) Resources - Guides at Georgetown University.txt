@@ -1,0 +1,100 @@
+Research Resources on AI - Artificial Intelligence (Generative) Resources - Guides at Georgetown University
+Skip to Main Content
+User account menu
+Your Account
+Toggle navigation menu
+Services
+Borrow & Renew
+Interlibrary & Consortium Loans
+Request & Pick Up
+Course Reserves
+Office Delivery
+Equipment
+Disability Support
+Printing & Scanning
+Off-Campus Access
+Software
+LinkedIn Learning
+Research
+Research Consultations
+Research & Course Guides
+Citation Tools
+Subject Librarians
+Digital Scholarship
+Data Services
+Design & Create
+Digital Publishing
+Scholarly Communication
+Copyright
+Articles & Databases
+Collections
+Rare Books, Manuscripts, Art & Archives
+Articles & Databases
+DigitalGeorgetown
+Library Catalogs
+Audio & Video Collection
+Slavery, Memory & Reconciliation
+Exhibitions
+Library Maps & Call Number Locations
+Spaces
+Study Spaces
+Computing Spaces
+Meeting & Instruction Spaces
+Maker Hub
+Digital Media Studios
+Gelardin Center
+Booth Family Center for Special Collections
+Writing Center
+Carrels & Lockers
+Bioethics Research Library
+Blommer Science Library
+Lauinger Library
+Georgetown University in Qatar Library
+School of Continuing Studies Library
+All Georgetown Libraries
+About
+Hours
+Maps & Directions
+Events
+Give to the Library
+Policies
+Contact Us
+Staff Directory
+Library Departments
+Library Showcase
+Library Guides Research Guides Artificial Intelligence (Generative) Resources Research Resources on AI
+Search this Guide Search
+Artificial Intelligence (Generative) Resources
+Home AI Fundamentals AI Tools for Research How to Craft Prompts  Research Resources on AI Library Article Databases on AI Recent EBooks on AI Latest News on AI Ethics & AI Citing Generative AI  AI, Authorship, & Copyright Campus Resources and Policies
+Library Article Databases on AI
+IEEE Xplore   This link opens in a new window Access to nearly one-third of the world's current literature in electrical engineering, electronics and computer science. Thousands of conference papers and journal articles on AI. Inspec   This link opens in a new window A bibliographic database that provides abstracts and indexing to a wide variety of technical and scientific papers across numerous disciplines including engineering, physics, communications, computing, manufacturing, production, and more. Click any links within this database to access Inspec Analytics. Springer Nature Link Computer Science Collection   This link opens in a new window Online access to Springer journals, books, and reference works in Computer Science. IDC   This link opens in a new window International Data Corporation (IDC) provides market intelligence, advisory services, and current commentary on the information technology, telecommunications, and consumer technology markets. The IDC database contains market forecasts, industry analyses, case studies, vendor decision toolkits, and blog posts from over 1,000 IDC expert analysts. IDC’s scope is global in nature and features information on major multinational technology companies. IDC also offers decision making strategies for both technology suppliers and technology buyers. ACM Digital Library   This link opens in a new window Provides access to citations and full-text content of books, journal articles, reports, dissertations, and conference proceedings published by the Association for Computing Machinery. O'Reilly for Higher Education   This link opens in a new window Ebooks and learning videos on AI, AI programming, prompt engineering, and more.  Active GU NetID required for access, including on-campus access. ERIC (via EBSCO)   This link opens in a new window Sponsored by the U.S. Department of Education, ERIC, the Education Resource Information Center, provides a rich vein of material relating to education literature and research. Content includes articles, books, papers, reports, and other materials on education topics dating back to 1966. The collection spans a broad range of education-related topics such as teaching, pedagogy, curriculum, bilingual education, counseling, policy, theory, and subjects of instruction, just to name a few. more... less... Unlike other iterations of ERIC--such as ERIC (via Ovid) or ERIC (via ed.gov)--ERIC (via EBSCO) utilizes the EBSCO search platform. Because of this, it can be cross-searched with other related EBSCO databases, such as Education Source, Education Full Text, and Educational Administration Abstracts. Additionally, ERIC (via EBSCO) contains more full-text content than other versions of because it effectively links out to ProQuest Theses and Dissertations when appropriate. Business Source Complete   This link opens in a new window Full-text business publications and hundreds of scholarly, peer-reviewed journals covering all aspects of business. Coverage goes as far back as 1886. Additional full text, non-journal content includes financial data, case studies, investment research reports, market research reports, country reports, company profiles, SWOT analysis, books, videos, major reference works, book digests, and conference proceedings. more... less... Covers management, economics, finance, accounting, international business and more. Titles include  Harvard Business Review, California Management Review, MIT Sloan Management Review  and  Administrative Science Quarterly . LinkedIn Learning   This link opens in a new window Many video tutorials on AI and its use. Watch a stand-alone video, or a series leading to an online certification.  Active GU NetID required for access, including on-campus access.
+Recent EBooks on AI
+Artificial Intelligence and Learning Futures  by  Stefan Popenici ISBN: 9781032208527 Publication Date: 2022-11-30 This book explores the implications of artificial intelligence's adoption in higher education and the challenges to building sustainable instead of dystopic schooling. As AI becomes integral to both pedagogy and profitability in today's colleges and universities, a critical discourse on these systems and algorithms is urgently needed to push back against their potential to enable surveillance, control, and oppression. This book examines the development, risks, and opportunities inherent to AI in education and curriculum design, the problematic ideological assumptions of intelligence and technology, and the evidence base and ethical imagination required to responsibly implement these learning technologies in a way that ensures quality and sustainability. Augmented Education in the Global Age  by  Daniel Araya (Editor); Peter Marber (Editor) ISBN: 9781032122939 Publication Date: 2023-03-23 This edited collection explores the social impact of Artificial Intelligence over the coming decades, specifically how this emerging technology will transform and disrupt our contemporary institutions. Chapters in this book discuss the history of technological revolutions and consider the anxieties and social challenges of lost occupations, as well as the evolution of new industries overlapping robotics, biotechnology, space exploration, and clean energy. Chapter authors unpack the nature of augmented education, from revamping curriculum and personalizing education, to redesigning workplace learning for an algorithmic era. Ultimately the book discusses policy and planning for an augmented future, arguing that work and learning are undergoing a metamorphosis around creativity and innovation amid a new global era and the race against automating technologies. The Ethics of Artificial Intelligence in Education  by  Wayne Holmes (Editor); Kaśka Porayska-Pomsta (Editor) ISBN: 9780367349721 Publication Date: 2022-08-11 This book identifies and confronts key ethical issues generated over years of AI research, development, and deployment in learning contexts. Adaptive, automated, and data-driven education systems are increasingly being implemented in universities, schools, and corporate training worldwide, but the ethical consequences of engaging with these technologies remain unexplored. Featuring expert perspectives from inside and outside the AIED scholarly community, this book provides AI researchers, learning scientists, educational technologists, and others with questions, frameworks, guidelines, policies, and regulations to ensure the positive impact of artificial intelligence in learning. Artificial Intelligence for Business Analytics  by  Felix Weber ISBN: 9783658375980 Publication Date: 2023-03-02 This book provides a concise introduction to the essential aspects of using artificial intelligence methods for business analytics, presents machine learning and the most important algorithms in a comprehensible form using the business analytics technology framework, and shows application scenarios from various industries. In addition, it provides the Business Analytics Model for Artificial Intelligence, a reference procedure model for structuring BA and AI projects in the company. Mind Mapping and Artificial Intelligence  by  José Maria Guerrero ISBN: 9780128201190 Publication Date: 2022-10-26 The goal of Mind Mapping and Artificial Intelligence is to provide readers with an introduction to mind mapping and artificial intelligence, to the problems of using traditional ways of visualizing complex information and as an introduction to mind mapping automation and its integration into Artificial Intelligence applications such as NLU and others. As more applications of Artificial Intelligence are developed in the near future, the need for the improvement of the visualization of the information generated will increase exponentially. Information overload will soon also happen in AI applications. A Beginner's Guide to Introduce Artificial Intelligence in Teaching and Learning  by  Muralidhar Kurni; Mujeeb Shaik Mohammed; Srinivasa K G ISBN: 9783031326523 Publication Date: 2023-06-29 This book presents a comprehensive study of how AI improves teaching and learning, from AI-based learning platforms to AI-assisted proctored examinations. This book provides educators, learners, and administrators on how AI makes sense in their everyday practice. Describing the application of AI in ten key aspects, this comprehensive volume prepares educational leaders, designers, researchers, and policymakers to effectively rethink the teaching and learning process and environments that students need to thrive.
+<<  Previous:  How to Craft Prompts  Next:  Latest News on AI >>
+Last Updated:   Nov 21, 2024 1:40 PM
+URL:   https://guides.library.georgetown.edu/ai
+Print Page
+Login to LibApps
+Report a problem
+Subjects:  Artificial Intelligence
+This work is licensed under a  Creative Commons Attribution NonCommercial 4.0 International License . |  Details of our policy
+Contact Us
+Directory
+Visit
+Maps
+Services
+Research
+Collections
+Spaces
+About
+Instagram
+Facebook
+YouTube
+Georgetown University Library
+37th & O Streets, N.W.
+Washington, D.C. 20057-1174
+202-687-7607
+Privacy Policy
+Copyright
+Web Accessibility
+Notice of Non-Discrimination

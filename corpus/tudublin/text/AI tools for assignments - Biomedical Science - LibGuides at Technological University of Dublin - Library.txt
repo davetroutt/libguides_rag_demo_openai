@@ -1,0 +1,73 @@
+AI tools for assignments - Biomedical Science - LibGuides at Technological University of Dublin - Library
+This site uses cookies and records your IP address for usage statistics.  Read More OK
+Skip to Main Content
+TU Dublin - libraries LibGuides Chemical, Physical and Applied Sciences Biomedical Science AI tools for assignments
+Search this Guide Search
+Biomedical Science
+Home Getting Started Books and eBooks Journals & Databases Toggle Dropdown FInding full-text articles  Google Scholar Clinical Trials Open Science: key websites Dissertations and final year projects AI tools for assignments Referencing and Academic Integrity Academic Writing New Resources and Training Events
+AI Tools for Academic Assignments
+Prompts for genAI
+To get the best results from your AI tool think about using as good a prompt as possible.
+The information, sentences, or questions that you enter into a genAI tool (“prompts”) are a big influence on the quality of outputs you receive. After you enter a prompt, the AI model analyzes your input and generates a response based on the patterns it has learned through its training. More descriptive prompts can improve the quality of the outputs.
+See the CLEAR Prompt framework for using prompts with AI at the end of this guide. Or try   Getting started with prompts for genAI
+AI Literacy LibGuide
+Artificial Intelligence (AI) Literacy
+by  Róisín Guilfoyle
+Last Updated Oct 18, 2024
+1197 views this year
+Doing a Literature Review
+Literature Review
+by  Róisín Guilfoyle
+Last Updated Aug 9, 2024
+4251 views this year
+Finding Journal Papers (Sourcing, Linking and Visualization Tools with genAI)
+Semantic Scholar  is a free, AI-powered research tool for scientific literature, based at the Allen Institute for AI. It has recently announced  Semantic Reader  which is an augmented reader to help make research articles more accessible and contextual.
+Open Knowedge Maps : is an AI-based visual interface that can help increases the visibility of research findings for science. It searches and visualizes content from  PubMed  and  BASE  resources,  based on   subject relevance . Open Knowledge maps provide an instant overview of a topic by showing the main areas at a glance, and journal articles and documents related to each area. This makes it possible to easily identify useful, pertinent information. Free of charge.
+Connected Papers :  Connected Papers is a unique, visual tool to help researchers and applied scientists find and explore papers relevant to their field of work.
+Keenious:   This tool analyses the text you already have written and makes suggestions of relevant articles.
+Research Rabbit : is a free “citation-based literature mapping tool” available online. Start by using one or more papers (called seed papers), and the app will find more papers relevant to the topic or author of interest (which is dictated by the seed papers you previously selected). The software scans for any publicly available (open access) source online and selects papers based on their similarities. Data sources include Semantic Scholar and PubMed. Save and export results to Zotero.
+Remember: these are all evolving tools. They tend to scrape data from similar open research sources. They are also subject to hallucinations and issues around security, copyright and sustainability. Always evaluate your results and use in conjunction with a peer reviewed database such as   Medline, Scopus or Web of Science .
+AI Tools for Literature Reviews
+LitMaps : recommends papers based on an initial starting or 'seed' article. Search for your topic, select an article, and LitMaps will find the top 100 relevant articles  based on connection and citations . Data sources include Semantic Scholar, Open Alex, Cross Ref and preprint services including PubMed and MedRxiv. Save and use with Zotero reference manager. Note: subscription required to access advanced features.
+Elicit  is a secondary research assistant that uses language models like GPT to automate parts of researchers’ workflows. Currently, the main workflow in Elicit is the literature review. If you ask a question, or upload a paper found using other means, Elicit will show other relevant or related papers along with summaries of key information about those papers in an easy-to-use table. Save and export results to Zotero. The free account come with only 5,000 "credits" for a short trial period.
+SciSpace  research assistant offers:
+AI Chat for Scientific PDFs: Engage in a chat with your research papers, ask questions and receiving explanations
+Literature Review Tool: Extract key data from PDFs, efficiently conducting literature reviews with the help of AI.
+Citation Generator: Automatically generate citations in the correct format, saving time and ensuring accuracy.
+AI Detector: Identify AI-generated content within your research material, maintaining the integrity of your literature review.
+Key Considerations When Choosing AI Tools
+Selecting the right AI tools for academic and research writing is a crucial decision that can significantly impact the effectiveness and quality of your work. With a myriad of options available, it’s important to consider several key factors to ensure that the tool you choose aligns well with your specific needs and academic standards. Think about:
+Accuracy and Reliability
+The tool’s ability to provide accurate and reliable results is crucial  especially in academic research and writing
+Look for tools with a proven track record of accuracy, particularly in areas like data analysis, citation generation, and plagiarism detection. Check where the data is being sourced from e.g. most research tools scrape data from Semantic Scholar. If in doubt use a library database instead.
+Ease of Use
+The tool should be easy to navigate.  Consider whether the tool offers support and tutorials.
+Compatibility with Academic Standards
+Ensure that the tool aligns with academic standards and practices. This is  important for citation generators and plagiarism checkers.   The tool should be up-to-date with the latest academic guidelines and citation styles.
+Cost-Effectiveness
+Evaluate the cost of the tool. While some free ones are available, paid tools often offer advanced or premium features.   Consider the value the tool brings to your research process and whether it’s a worthwhile investment.
+Customization and Flexibility
+Look for tools that offer flexibility in terms of settings, output formats, and integration with other software e.g. Zotero and MS Office.
+Data Privacy and Security
+Given the sensitive nature of research data, choose tools that have strict data privacy and security standards.
+Difference between Google Scholar and genAI
+Information Search
+Google Scholar: is a specialized search engine for links to scholarly articles, conference papers, and patents.  It provides an overview of research material reaching back to the mid 20th century. It relies on keyword search and matching, presenting users with a list of relevant academic content.
+ChatGPT and other genAI employs a conversation-based approach based on probabilistic large language models. Users can pose queries in natural language, and it aims to understand user intent and provide organized responses in complete sentences.
+User Experience:
+Google Scholar: While Google Scholar provides comprehensive results, users must filter through search results individually, which can be time-consuming. Some self-citing occurs and citations and impact metrics can be inflated. It's not a 'one-stop-shop' solution and doesn't index every published peer review journal. Full-text access can also be an issue.
+ChatGPT: offers a user-friendly and intuitive search experience. It understands context and provides human-like answers, saving users time. However it can show hallucinations in it's answers and it does not always use academic appropriate resources to answer questions. Prompt engineering can help get more detailed answers from a LLM..
+Fact-Checking and Trust:
+Google Scholar: Google Scholar focuses on academic content but doesn't fact-check information. The user needs to evaluate their results and be aware of retracted papers and , predatory publishers as well as issues around currency and accuracy and author expertise.
+ChatGPT: provides straightforward questions and general solutions but falls short in fact-checking tasks. Again the user needs to evaluate their results and be aware of retractions and predatory publishers as well as issues around currency and accuracy and author expertise.
+In summary, Google Scholar is a specialized source for scholarly content, while ChatGPT offers a conversational search experience useful for summarizing non-specialised general information.
+Prompts for genAI
+<<  Previous:  Dissertations and final year projects Next:  Referencing and Academic Integrity >>
+Last Updated:   Dec 11, 2024 5:55 PM
+URL:   https://tudublin.libguides.com/biomedical_science
+Print Page
+Login to LibApps
+Report a problem
+Subjects:  Biology ,  Biomedical sciences
+Tags:  Science
+This work is licensed under  CC BY-NC-SA 4.0

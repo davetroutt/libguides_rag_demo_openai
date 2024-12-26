@@ -1,0 +1,98 @@
+AI Tools for Creating Videos  - Artificial Intelligence (AI) - Research Guides at Purdue University Libraries
+Skip to Main Content
+Menu
+Hours
+Databases
+Ask a Librarian
+My Account
+Purdue Libraries Research Guides Subject Guides Artificial Intelligence (AI) AI Tools for Creating Videos
+Search this Guide Search
+Artificial Intelligence (AI)
+This LibGuide provides an overview of AI knowledge, the applications of AI tools in teaching and learning, and content for the AI research areas.
+Home AI Tools Generative AI Tools  AI Tools for Research   AI Tools for Systematic Review  AI Tools for Teaching and Learning   AI Tools for Writing   AI Tools for Creating Videos   AI Tools for Creating Images  AI in Research  How to Cite AI Generated Content Resources for Educators  AI in K12 Purdue AI Resources  Prompt Design AI and Ethics Copyright  Publisher Policies  Selected Journals in AI
+AI Tools for Creating Video Comparison
+Feature
+Synthesia
+VEED
+Vidyo.ai
+Purpose
+AI video generation
+Online video editing and creation
+AI content repurposing and video editing
+Key Features
+• AI avatars
+• Multilingual support
+• Customizable gestures
+• AI avatars
+• AI-powered editing
+• Collaboration tools
+• Stock library
+• Content repurposing
+• Video editing suite
+Price
+Starter: $22/month
+Creator: $67/month
+Enterprise: Custom pricing
+Free tier available; Lite: $12/month; Pro: $30/month/
+Free trial available
+Pro: $29.99/month
+Pro+: $49.99/month
+Performance
+High-quality video output; intuitive interface
+User-friendly, suitable for quick edits
+Comprehensive suite for content creators
+Limitations
+Limited customization of facial expressions
+Limited advanced features in free version
+Higher tiers needed for full feature access
+Best For
+Businesses needing scalable video production
+Creators looking for easy-to-use online editing tools
+Professionals needing robust content repurposing solutions
+Synthesia
+Basic Info
+How to Use
+Synthesia Synthesia uses AI to create videos with virtual presenters, supporting over 120 languages for voiceover.
+Price: Free version; Starter Plan $18/mo; Creator $64/mo.
+Intro to Synthesia: Making Your First Video
+Veed
+Basic Info
+How to Use
+Veed VEED.io is a versatile online video editing platform used for creating and enhancing various types of video content.
+Free tier available; Lite: $12/month; Pro: $30/month/
+Veed.io Tutorial 2024: How To Use Veed.io For Beginners
+Vidyo.ai
+Basic Info
+How to Use
+Vidyo.ai Vidyo.ai is an AI-powered platform that revolutionizes video content creation for social media. It automatically transforms long videos into engaging, short clips suitable for various platforms.
+How to use vidyo.ai?
+<<  Previous:  AI Tools for Writing  Next:  AI Tools for Creating Images >>
+Last Edited:   Dec 18, 2024 12:27 PM
+URL:   https://guides.lib.purdue.edu/ai
+Print Page
+Login to LibApps
+Report a problem
+Subjects:  Education ,  Engineering, Technology, & Computer Science ,  Faculty Resources ,  General Research
+Login to LibApps
+Report a problem.
+Follow Us
+Visit Us
+Purdue Libraries
+504 Mitch Daniels Blvd.,
+West Lafayette, IN 47907-2058
+765-494-2900
+Partners
+School of Information Studies
+Purdue University Press
+University Copyright Office
+Resources
+Directory
+Careers
+Intranet
+Contact Us
+Purdue University Libraries is a congressionally designated depository for U.S. Government information.
+Access to the government information collection is open to the public.
+In accordance with Purdue policies, all persons have equal access to Purdue University’s educational programs, services and activities, without regard to race, religion, color, sex, age, national origin or ancestry, genetic information, marital status, parental status, sexual orientation, gender identity and expression, disability or status as a veteran. See Purdue’s  Nondiscrimination Policy Statement . If you have any questions or concerns regarding these policies, please contact the Office of the Vice President for Ethics and Compliance at  vpec@purdue.edu  or 765-494-5830.
+Copyright
+©   Purdue University. All Rights Reserved.
+Accessibility  |  EA/EO University  |  Integrity Statement  |  Privacy Policy  |  Contact Us

@@ -1,0 +1,34 @@
+AI and evidence synthesis - AI Tools for Research - Research Guides at Temple University
+Skip to Main Content
+University Libraries
+Libraries Research Guides Topic Guides AI Tools for Research AI and evidence synthesis
+Search this Guide Search
+AI Tools for Research
+This guide offers advice on AI-powered tools and functionality created for or used in academic research.
+Home Assessing AI research tools Popular chatbots and research AI in library subscriptions Searching literature Mapping literature Summarizing literature AI and evidence synthesis Evidence synthesis review searching Designing search terms and queries Article screening assistance Related guides Working with data Writing code Presenting and publishing Get help
+Evidence synthesis review searching
+Formal evidence synthesis reviews, such as systematic, scoping, rapid, and other reviews, require searches that are transparent, documented, and reproducible. AI literature search tools cannot currently do the high quality searching required for evidence synthesis reviews.
+AI search tools may help with less formal, narrative literature reviews, but are not appropriate for formal evidence synthesis searching.
+To learn more about doing high quality systematic and scoping reviews, see the Libraries'  Evidence Synthesis & Systematic Reviews guide . To discuss expert search and co-authoring service for an evidence synthesis project, contact our  Evidence Synthesis team .
+Designing search terms and queries
+Any of the popular standalone chatbots can be a good tool for brainstorming keywords to search for a research topic. Many of the literature search tools linked on this guide also show conceptual keywords that can help with developing search terms.
+litsearchr Graphical Interface Web interface for the R package litsearchr, helps identify search terms and generate reproducible search strategies. The web version and the R package are both completely free.
+Article screening assistance
+Rayyan A tool with a free tier for collaborative organizing and managing of evidence synthesis reviews. Includes  an AI engine  that rates how likely screening items are to be included in your review based on your inclusion/exclusion criteria. Does not do the screening for you, but allows you to sort the most likely inclusions earlier in your screening process. ASReview Lab Free and open source tool that uses active learning as you screen to re-sort the remaining items by most to least likely to be included in your review. Like Rayyan, it doesn't do the screening for you. It sorts items to screen based on your previous inclusion/exclusion decisions.
+Related guides
+Evidence Synthesis and Systematic Reviews
+by  Jenny Pierce
+Last Updated Oct 2, 2024
+27554 views this year
+<<  Previous:  Summarizing literature Next:  Working with data >>
+Last Updated:   Nov 20, 2024 11:41 AM
+URL:   https://guides.temple.edu/ai-research-tools
+Print Page
+Login to LibApps
+Report a broken link or other problem .
+Tags:  AI ,  AI assistants ,  AI coding ,  AI ethics ,  artificial intelligence ,  chatbots ,  ChatGPT ,  digital literacy ,  GenAI ,  generative AI ,  literature mapping ,  literature search ,  Research Assistants ,  research skills ,  research tools ,  semantic search
+Temple University
+University Libraries
+See all library locations
+Library Directory Locations and Directions Frequently Called Numbers
+Need help?  Email us  at asktulibrary@temple.edu

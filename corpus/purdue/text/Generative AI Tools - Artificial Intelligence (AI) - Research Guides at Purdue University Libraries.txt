@@ -1,0 +1,133 @@
+Generative AI Tools - Artificial Intelligence (AI) - Research Guides at Purdue University Libraries
+Skip to Main Content
+Menu
+Hours
+Databases
+Ask a Librarian
+My Account
+Purdue Libraries Research Guides Subject Guides Artificial Intelligence (AI) Generative AI Tools
+Search this Guide Search
+Artificial Intelligence (AI)
+This LibGuide provides an overview of AI knowledge, the applications of AI tools in teaching and learning, and content for the AI research areas.
+Home AI Tools Generative AI Tools  AI Tools for Research   AI Tools for Systematic Review  AI Tools for Teaching and Learning   AI Tools for Writing   AI Tools for Creating Videos   AI Tools for Creating Images  AI in Research  How to Cite AI Generated Content Resources for Educators  AI in K12 Purdue AI Resources  Prompt Design AI and Ethics Copyright  Publisher Policies  Selected Journals in AI
+Generative AI Tools Comparison
+Feature
+Copilot
+Perplexity
+ChatGPT
+Base Technology
+GPT-4 with Bing integration
+Mixture of expert models
+OpenAI's GPT models (GPT-4o, GPT-4o mini)
+Information Accuracy
+Real-time but can be inaccurate
+Excels in accuracy, real-time
+Depends on pre-trained knowledge, limited web access
+Interaction Style
+Creative, Balanced, Precise styles
+Structured responses
+Natural conversations
+Specialized Features
+• DALL-E 3 integration
+• Microsoft ecosystem integration
+• Advanced article summarization
+• Various writing modes
+• Custom instructions
+• Web browsing (paid)
+• Image generation
+Limitations
+• 5 responses per conversation
+• 4000 characters per prompt
+Lacks image generation capability
+Free version has knowledge cut-off
+Price
+$30/month for Microsoft 365 Copilot
+$20/month for Copilot Pro
+Free plan available
+Professional plan: $20/month
+Free plan available
+Plus: $20/month
+Best For
+General-purpose AI with web search
+Research and information retrieval
+Versatile conversations and content generation
+Feature
+Copilot
+Perplexity
+ChatGPT
+Data Collection
+Stores user prompts and responses within Microsoft 365 service boundaries
+Collects API usage data and user account information
+Collects personal information and conversation history
+Data Usage
+Does not use customer data to train models; data is encrypted and stored securely
+Does not use data for model training unless users opt in
+May use data to improve models unless users opt out; does not sell data
+Data Retention
+Data is stored with encryption and can be managed or deleted by users
+Retains data for 30 days, after which it may be deleted
+Users can delete chat history; stored for up to 30 days if history is off
+Data Sharing
+Data is not shared outside Microsoft without consent; adheres to strict privacy policies
+Does not share data with third parties for marketing; strict confidentiality measures
+Shares minimal data with trusted providers; no third-party marketing use
+User Control
+Users can delete interaction history via the My Account portal
+Users can opt out of data retention policies through account settings
+Users can manage data settings and export their data; opt-out options available
+Access Copilot with Purdue account:
+Unlike Copilot for Microsoft 365, Copilot with Data Protection does not access M365 files and data. Chat data is not saved, and chat data will not be available in any capacity to Microsoft or other large language models to train their AI tools against. To access Copilot with Data Protection, users will need to sign in with their campus-specific Purdue account.
+Microsoft Copilot
+Microsoft Copilot
+How to Use
+Microsoft Copilot Copilot is an advanced conversational AI model based on the GPT-4 architecture. It is designed to assist users with a wide range of tasks, from synthesizing information and offering support to completing productivity-related activities. Access to GPT-4 available to Purdue faculty, staff and students Purdue University faculty, staff and students have access to GPT-4 through Microsoft Copilot with Data Protection. Unlike Copilot for Microsoft 365, Copilot with Data Protection does not access M365 files and data. Chat data is not saved, and chat data will not be available in any capacity to Microsoft or other large language models to train their AI tools against.
+Learn about Copilot prompts Introducing Microsoft 365 Copilot with Outlook, PowerPoint, Excel, and OneNote
+Perplexity
+Perplexity
+How to Use
+Perplexity Perplexity AI is an innovative AI-powered search engine that combines the capabilities of large language models with real-time web searching to provide comprehensive, up-to-date answers to user queries.
+Perplexity is available as a web app, mobile app, and Chrome extension.
+Standard plan: free forever. Pro plan: $20 per month or $200 per year. Purdue community earns free access to Perplexity Pro for one year
+How does Perplexity work? What is Perplexity Copilot? Introducing Perplexity Pages
+ChatGPT
+ChatGPT
+How to Use
+ChatGPT ChatGPT is an AI language model by OpenAI that generates human-like text based on input. It's used for conversations, answering questions, and tasks like writing or research across various fields.
+ChatGPT is available on mobile or desktop.
+Free version; ChatGPT Plus: $20 per month
+Introducing GPT-4o Prompt Engineering This guide shares strategies and tactics for getting better results from large language models (sometimes referred to as GPT models) like GPT-4o. What can you do with GPT-4?
+Google Gemini
+Google Gemini
+How to Use
+Google Gemini Gemini is a large language model developed by Google AI. It is capable of generating human-quality text in response to a wide range of prompts and questions.
+Gemini Apps FAQ Prompt your way with Gemini
+<<  Previous:  AI Tools Next:  AI Tools for Research  >>
+Last Edited:   Dec 18, 2024 12:27 PM
+URL:   https://guides.lib.purdue.edu/ai
+Print Page
+Login to LibApps
+Report a problem
+Subjects:  Education ,  Engineering, Technology, & Computer Science ,  Faculty Resources ,  General Research
+Login to LibApps
+Report a problem.
+Follow Us
+Visit Us
+Purdue Libraries
+504 Mitch Daniels Blvd.,
+West Lafayette, IN 47907-2058
+765-494-2900
+Partners
+School of Information Studies
+Purdue University Press
+University Copyright Office
+Resources
+Directory
+Careers
+Intranet
+Contact Us
+Purdue University Libraries is a congressionally designated depository for U.S. Government information.
+Access to the government information collection is open to the public.
+In accordance with Purdue policies, all persons have equal access to Purdue University’s educational programs, services and activities, without regard to race, religion, color, sex, age, national origin or ancestry, genetic information, marital status, parental status, sexual orientation, gender identity and expression, disability or status as a veteran. See Purdue’s  Nondiscrimination Policy Statement . If you have any questions or concerns regarding these policies, please contact the Office of the Vice President for Ethics and Compliance at  vpec@purdue.edu  or 765-494-5830.
+Copyright
+©   Purdue University. All Rights Reserved.
+Accessibility  |  EA/EO University  |  Integrity Statement  |  Privacy Policy  |  Contact Us

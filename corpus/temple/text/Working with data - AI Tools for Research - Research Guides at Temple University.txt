@@ -1,0 +1,46 @@
+Working with data - AI Tools for Research - Research Guides at Temple University
+Skip to Main Content
+University Libraries
+Libraries Research Guides Topic Guides AI Tools for Research Working with data
+Search this Guide Search
+AI Tools for Research
+This guide offers advice on AI-powered tools and functionality created for or used in academic research.
+Home Assessing AI research tools Popular chatbots and research AI in library subscriptions Searching literature Mapping literature Summarizing literature AI and evidence synthesis Working with data Data discovery Quantitative data and computation Write code to work with data Working with qualitative data Related guides Writing code Presenting and publishing Get help
+Data discovery
+ChatGPT ChatGPT can discover openly available datasets and can generate datasets from narrative information on the open internet. Free accounts have some limited access to its data analysis and visualization, and there are GPTs for working with data, such as Excel AI, Wolfram, and others. Data Commons Free Google initiative that organizes a wide range of publicly available data into a uniform visualization and download platform. The Explore interface uses generative AI to accept and interpret natural language questions. Microsoft Copilot Microsoft's chatbot, Copilot, can find datasets from the open internet and, if opened as a sidebar in the Edge web browser, can analyze content you provide it. Perplexity Web search engine with a chatbot interface.  Has free access to scholarly research plug-ins such as Wolfram Alpha for data discovery, visualization, and mathematical calculation. Accepts file uploads.
+Quantitative data and computation
+ChatGPT ChatGPT has data analysis and visualization capabilities and custom GPTs for working with data. Deepsheet AI tool for conversational data analysis. Accepts many import formats and allows exporting responses and outputs. Julius Chatbot data analyzer and visualizer with a free tier allowing a set number of messages per month. Offers good FAQs, guides, and videos  in their documentation . Power BI Desktop Note:  Windows users at Temple can download Power BI Desktop through Office 365.
+Power BI Desktop's AI Insights includes a collection of pre-trained machine learning models that can enhance data preparation. Access AI Insights in the Power Query Editor. Powerdrill Chatbot data analysis platform with a free tier limited to a few messages per month. Details and video tutorials available  in their documentation . Wolfram Alpha   This link opens in a new window Wolfram|Alpha offers dynamic computations based on a vast collection of built-in data, algorithms and methods. Temple users have free access to Wolfram|Alpha Pro. See  Temple ITS' site licensed software page  for more details. Tableau Agent & tableau Pulse Brings "trusted generative AI" to the Tableau platform. Tableau Pulse is a reimagined data experience for business users, powered by Tableau AI. Tableau licenses are available through some Temple departments. See  Temple ITS' Tableau page  for more information.
+Write code to work with data
+Popular, free chatbots excel at generating code, and walking users through how to code a program to accomplish a task. This is useful for working with data. Try using a free chatbot, like ChatGPT, to generate code for retrieving, analyzing, or visualizing data. Then paste it into your preferred development environment.
+Several free computational notebook platforms also have AI coding assistance built in, and GitHub Copilot coding assistant is freely available for students and teachers from GitHub Education.
+See the  Writing Code page  of this guide for more information and links.
+Working with qualitative data
+Machine learning-based tools for automatic coding are not new in qualitative data analysis software, but some existing platforms and newer apps are introducing more generative AI features. Listed below are some that have either a free tier or are available to some Temple users.
+When analyzing qualitative data from human participants, use caution in considering cloud-based tools. If personal or sensitive data is included, offline platforms may be needed to comply with university research security and IRB requirements for responsible data management.
+AILYZE Lite An AI tool for qualitative research that has a free tier and attempts to generate summaries, identify themes, count participant viewpoints, and answer questions about qualitative data.  Data security info page  states that your uploaded data is encrypted and not used to train AI models. See  this Qeludra Qualitative Research Community blog post  about testing AILYZE for more details. ATLAS.ti ATLAS.ti is not free, but some Temple users have free access to a license through their school or college. The latest software version includes generative AI tools including: AI Coding, AI Intentional Coding, AI Suggested Codes, and AI Summaries. See  the ATLAS.ti's AI tools YouTube playlist  of helpful video tutorials.  ATLAS.ti's AI tools send your data over the internet to OpenAI for processing.  Their  AI data security page describes their security and privacy measures for this transfer . This may make them inappropriate for use with research data that requires offline or certain levels of secure online storage and management. Sentigem Easy-to-use sentiment analysis tool for English language text. Transcription tools See the Temple Libraries' guide to qualitative data analysis and tools, Transcription page for links to many AI-powered tools for transcribing qualitative data.
+Related guides
+Computational Textual Analysis
+by  Alex Wermer-Colan
+Last Updated Aug 11, 2023
+1769 views this year
+Find Data and Statistics
+by  Olivia Given Castello
+Last Updated Oct 28, 2024
+1498 views this year
+Qualitative Data Analysis and QDA Tools
+by  Olivia Given Castello
+Last Updated Dec 20, 2024
+10049 views this year
+<<  Previous:  AI and evidence synthesis Next:  Writing code >>
+Last Updated:   Nov 20, 2024 11:41 AM
+URL:   https://guides.temple.edu/ai-research-tools
+Print Page
+Login to LibApps
+Report a broken link or other problem .
+Tags:  AI ,  AI assistants ,  AI coding ,  AI ethics ,  artificial intelligence ,  chatbots ,  ChatGPT ,  digital literacy ,  GenAI ,  generative AI ,  literature mapping ,  literature search ,  Research Assistants ,  research skills ,  research tools ,  semantic search
+Temple University
+University Libraries
+See all library locations
+Library Directory Locations and Directions Frequently Called Numbers
+Need help?  Email us  at asktulibrary@temple.edu

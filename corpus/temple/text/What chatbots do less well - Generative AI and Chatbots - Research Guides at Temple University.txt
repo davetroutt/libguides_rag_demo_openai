@@ -1,0 +1,35 @@
+What chatbots do less well - Generative AI and Chatbots - Research Guides at Temple University
+Skip to Main Content
+University Libraries
+Libraries Research Guides Topic Guides Generative AI and Chatbots What chatbots do less well
+Search this Guide Search
+Generative AI and Chatbots
+This guide offers advice on generative AI chatbots and tools and how to best use them to support your work.
+Home How chatbots work What chatbots do well What chatbots do less well Hallucination and misinformation Exercise caution Related guides Optimizing prompts Generative AI in web search Citing generative AI AI tools for research   This link opens in a new window Ethical, equity, and privacy concerns Get help
+Hallucination and misinformation
+Generative AI chatbots model human language and their goal is to mimic human conversation. They do not distinguish between true and untrue, biased and unbiased information. For these reasons, they may give incorrect or biased responses. They may "hallucinate," fabricating information, or conflating ideas, events, people, and concepts.
+Be careful about asking AI chatbots questions where you don't have the expertise to judge the accuracy of the response.
+Exercise caution
+Currently, AI chatbot responses often include a mix of correct and incorrect information. The technology is changing rapidly and has improved over time, but it's important to be careful about the information you enter into and get out of popular, standalone chatbots such as ChatGPT, Bing Copilot, and Google Gemini. You may not want to rely on them for:
+Medical, legal, or financial advice
+High-stakes decision making
+Answering very specific questions or questions that require answers based on current information
+Finding scholarly sources on academic or controversial topics
+The  AI Tools for Research page  lists machine learning and AI-powered tools to try as alternatives to popular, standalone chatbots for conducting scholarly research and supporting different parts of the research process.
+Related guides
+"Fake News," Misinformation & Disinformation
+by  Kristina De Voe
+Last Updated Oct 30, 2024
+31105 views this year
+<<  Previous:  What chatbots do well Next:  Optimizing prompts >>
+Last Updated:   Oct 17, 2024 11:53 AM
+URL:   https://guides.temple.edu/ai-chatbots
+Print Page
+Login to LibApps
+Report a broken link or other problem .
+Tags:  AI ,  AI ethics ,  artificial intelligence ,  Bard ,  Bing ,  chatbots ,  ChatGPT ,  Copilot ,  digital literacy ,  Gemini ,  generative AI ,  machine learning ,  misinformation ,  Perplexity ,  prompt engineering ,  prompt optimization
+Temple University
+University Libraries
+See all library locations
+Library Directory Locations and Directions Frequently Called Numbers
+Need help?  Email us  at asktulibrary@temple.edu

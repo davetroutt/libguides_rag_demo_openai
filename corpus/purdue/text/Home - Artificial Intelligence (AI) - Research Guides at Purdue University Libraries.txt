@@ -1,0 +1,62 @@
+Home - Artificial Intelligence (AI) - Research Guides at Purdue University Libraries
+Skip to Main Content
+Menu
+Hours
+Databases
+Ask a Librarian
+My Account
+Purdue Libraries Research Guides Subject Guides Artificial Intelligence (AI) Home
+Search this Guide Search
+Artificial Intelligence (AI)
+This LibGuide provides an overview of AI knowledge, the applications of AI tools in teaching and learning, and content for the AI research areas.
+Home AI Tools Toggle Dropdown Generative AI Tools  AI Tools for Research   AI Tools for Systematic Review  AI Tools for Teaching and Learning   AI Tools for Writing   AI Tools for Creating Videos   AI Tools for Creating Images  AI in Research  How to Cite AI Generated Content Resources for Educators  AI in K12 Purdue AI Resources  Prompt Design AI and Ethics Copyright  Publisher Policies  Selected Journals in AI
+Clinical Assistant Professor
+Jing Lu
+she/her/hers
+Email Me
+Contact:   WALC Q 765-494-1352   Website
+Subjects:   Education ,  Engineering, Technology, & Computer Science
+News
+Purdue community earns free access to Perplexity Pro for one year As part of a back-to-school promotional program, Purdue University faculty, staff and students with a purdue.edu address have free access to Perplexity Pro AI for one year. Users with an active Purdue University email address can sign up and redeem this anytime before December 31, 2024.
+What is Artificial intelligence (AI)
+Artificial Intelligence (AI), a term introduced by the esteemed Stanford Professor John McCarthy in 1955, was originally described as "the science and engineering of making intelligent machines." Initially, AI research centered on programming machines to demonstrate certain behaviors, like playing games. However, the current focus is on crafting machines with the capacity to learn, resembling aspects of human learning processes.
+Andresen, S. L. (2002). John McCarthy: father of AI. IEEE Intelligent Systems, 17(5), 84-85.
+What is Artificial Intelligence? - UNESCO
+Key Terms
+Artificial Intelligence Computer Vision Deep Learning Generative AI Machine Learning Natural Language Process (NLP)
+Free Online AI Training Course
+Generative AI for Educators Developed by AI experts at Google in collaboration with MIT RAISE, this course will help you bring AI into educational practice.
+Purdue AI Programs
+Artificial Intelligence at Purdue University Artificial Intelligence Micro-Credentials Purdue Artificial Intelligence Major (College of Liberal Arts ) Purdue Artificial Intelligence Major (College of Science) Purdue Online Applied Generative AI Specialization Program Purdue Online Master's in Artificial Intelligence
+License Info
+Artificial Intelligence (AI) LibGuide  by  Jing Lu  is licensed under  CC BY-NC-SA 4.0
+Next:  AI Tools >>
+Last Updated:   Dec 18, 2024 12:27 PM
+URL:   https://guides.lib.purdue.edu/ai
+Print Page
+Login to LibApps
+Report a problem
+Subjects:  Education ,  Engineering, Technology, & Computer Science ,  Faculty Resources ,  General Research
+Login to LibApps
+Report a problem.
+Follow Us
+Visit Us
+Purdue Libraries
+504 Mitch Daniels Blvd.,
+West Lafayette, IN 47907-2058
+765-494-2900
+Partners
+School of Information Studies
+Purdue University Press
+University Copyright Office
+Resources
+Directory
+Careers
+Intranet
+Contact Us
+Purdue University Libraries is a congressionally designated depository for U.S. Government information.
+Access to the government information collection is open to the public.
+In accordance with Purdue policies, all persons have equal access to Purdue University’s educational programs, services and activities, without regard to race, religion, color, sex, age, national origin or ancestry, genetic information, marital status, parental status, sexual orientation, gender identity and expression, disability or status as a veteran. See Purdue’s  Nondiscrimination Policy Statement . If you have any questions or concerns regarding these policies, please contact the Office of the Vice President for Ethics and Compliance at  vpec@purdue.edu  or 765-494-5830.
+Copyright
+©   Purdue University. All Rights Reserved.
+Accessibility  |  EA/EO University  |  Integrity Statement  |  Privacy Policy  |  Contact Us

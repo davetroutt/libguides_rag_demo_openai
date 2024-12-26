@@ -1,0 +1,79 @@
+﻿$(".hover-dropdowns").children('li').hover(function () {
+    $(this).children('.dropdown-menu').show()
+}, function () {
+    $(this).children('.dropdown-menu').hide();
+});
+
+function createListItems(data) {
+    var newlinklist = [];
+
+    var ResourcesLinks = [];
+    var ResearchLinks = [];
+    var HelpLinks = [];
+    var DirectoriesLinks = [];
+    var AboutLinks = [];
+    var MyAccountLinks = [];
+
+    $.each(data, function (index) {
+
+        if (data[index].ViewName === 'Materials') {
+            var ResearchLinksItem = { ViewName: data[index].ViewName, CardHeader: data[index].CardHeader, CardLinkURL: data[index].CardLinkURL, DATE_INSERTED: data[index].DATE_INSERTED };
+            ResearchLinks.push(ResearchLinksItem);
+        }
+
+        if (data[index].ViewName === 'Services') {
+            var ResourcesLinksItem = { ViewName: data[index].ViewName, CardHeader: data[index].CardHeader, CardLinkURL: data[index].CardLinkURL, DATE_INSERTED: data[index].DATE_INSERTED };
+            ResourcesLinks.push(ResourcesLinksItem);
+        }
+
+        if (data[index].ViewName === 'Help') {
+            var HelpLinksItem = { ViewName: data[index].ViewName, CardHeader: data[index].CardHeader, CardLinkURL: data[index].CardLinkURL, DATE_INSERTED: data[index].DATE_INSERTED };
+            HelpLinks.push(HelpLinksItem);
+        }
+
+        if (data[index].ViewName === 'Departments') {
+            var DirectoriesLinksItem = { ViewName: data[index].ViewName, CardHeader: data[index].CardHeader, CardLinkURL: data[index].CardLinkURL, DATE_INSERTED: data[index].DATE_INSERTED };
+            DirectoriesLinks.push(DirectoriesLinksItem);
+        }
+
+        if (data[index].ViewName === 'About') {
+            var AboutLinksItem = { ViewName: data[index].ViewName, CardHeader: data[index].CardHeader, CardLinkURL: data[index].CardLinkURL, DATE_INSERTED: data[index].DATE_INSERTED };
+            AboutLinks.push(AboutLinksItem);
+        }
+
+        if (data[index].ViewName === 'My Account') {
+            var MyAccountLinksItem = { ViewName: data[index].ViewName, CardHeader: data[index].CardHeader, CardLinkURL: data[index].CardLinkURL, DATE_INSERTED: data[index].DATE_INSERTED };
+            MyAccountLinks.push(MyAccountLinksItem);
+        }
+    });
+
+    newlinklist.push(ResourcesLinks);
+    newlinklist.push(ResearchLinks);
+    newlinklist.push(HelpLinks);
+    newlinklist.push(DirectoriesLinks);
+    newlinklist.push(AboutLinks);
+    newlinklist.push(MyAccountLinks);
+
+    for (i = 0; i < 6; i++) {
+
+        //Variables to append list of links to
+        var NavBarIdentifer = "#nav-link-" + i + " > ul";
+        var SideBarIdentifer = "#sidebar-link-" + i;
+        var FooterIdentifer = "#footer-link-" + i;
+
+        var NavBarUL = $(NavBarIdentifer);
+        var SideBarUL = $(SideBarIdentifer);
+        var FooterUL = $(FooterIdentifer);
+
+        var filteredList = newlinklist[i];
+
+        $(filteredList).each(function (index, item) {
+            $(item).each(function (subindex, subItem) {
+                NavBarUL.append("<li>" + "<a href='" + subItem.CardLinkURL + "' class='mp-btn'>" + subItem.CardHeader + "</a>" + "</li>");
+                SideBarUL.append("<li>" + "<a href='" + subItem.CardLinkURL + "' class='mp-btn'>" + subItem.CardHeader + "</a>" + "</li>");
+                FooterUL.append("<li>" + "<a href='" + subItem.CardLinkURL + "' class='mp-btn'>" + subItem.CardHeader + "</a>" + "</li>");
+            });
+
+        });
+    }
+};

@@ -1,0 +1,330 @@
+/* CSS Document */
+
+/****************************** LIBGUIDES CSS *******************************/
+/****************************** GENERAL LAYOUT ******************************/
+html {
+	background-color: #ededed;
+	position: relative;
+	min-height: 100%;
+}
+body{
+	padding:0;
+	margin-bottom: 60px;
+	background-color: #ededed;
+	line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	font-weight: 300;
+	color:#a3792c;
+}
+a:link,
+a:visited,
+a:active,
+a:focus {
+	color: #a3792c;
+	outline: none !important;
+    overflow-wrap: break-word;
+}
+a:hover {
+	border-bottom: 1px dotted #a3792c;
+}
+div a:hover,
+div a:focus,
+p a:hover,
+p a:focus,
+li a:hover,
+li a:focus,
+blockquote a:hover,
+blockquote a:focus,
+td a:hover,
+td a:focus {
+	color:#a3792c;
+	text-decoration:none;
+}
+
+a.s-lg-label-more:hover {
+	border-bottom: none;
+}
+/******************************** HEADER CSS ********************************/
+.top {
+	/* border-top: 4px solid #bb8d0a;
+	background: #000 url('//assets.lib.purdue.edu/images/siteTemplate/stripes.png') repeat; */
+}
+.top .logo {
+	margin:25px 0px;
+}
+.top .logo a,
+.top .logo a img {
+	width:70%;
+	display:block;
+	margin:0px auto;
+	border-bottom: none;
+}
+
+/**************************** NAVIGATION ELEMENTS ****************************/
+.breadcrumb {
+	background: url("//assets.lib.purdue.edu/images/siteTemplate/breadcrumb_bg_repeating_white.png") top left repeat-x;
+	height: 23px;
+	line-height: 23px;
+	padding:0 10px !important;
+	display: none;
+}
+#s-lib-bc-customer {
+	/*display: none;*/
+}
+.navbar {
+	margin-bottom:0px;
+	border-radius:0px;
+	min-height:inherit;
+}
+.navbar-nav {
+	margin:0px !important;
+}
+.navbar-collapse {
+	border:0px;
+	box-shadow:none;
+	padding:0px;
+	float: left;
+}
+.navbar-toggle {
+	float:left;
+	margin-left:15px;
+	margin-right:0px;
+	border:0px;
+}
+.blackbar {
+	background-color:#171717;
+	border:0px;
+}
+.blackbar a:hover {
+	border-bottom: none;
+}
+.nav > li > a {
+	padding: 5px 10px;
+	font-size: 14px;
+}
+.navbar-header p {
+	float:left;
+	margin:0px;
+	padding-top:15px;
+	padding-left:5px;
+	text-transform:none;
+	color:#ffffff;
+	font-weight: 200;
+}
+
+/****************************** FOOTER ELEMENTS *******************************/
+#s-lib-footer-login-link, #s-lib-footer-support-link {
+	display: none;
+}
+.footer2 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	color: #999;
+	background-color: #3b3b3b;
+	font-size: 11px;
+	line-height: 16px;
+	padding-top: 10px;
+}
+.footerLinks {
+	padding-top: 10px;
+}
+.footerLinks a {
+	color: #9d9d9d;
+	font-size: 12px;
+}
+.footerLinks a:hover, .accessibilityText a:hover {
+	color: #FFF;
+}
+.accessibilityText a {
+	color: #9d9d9d;
+	font-size: 11px;
+}
+.govdocsIcon {
+	float: right;
+	padding: 2px 0 0 5px;
+}
+
+/****************************** HOMEPAGE ELEMENTS *******************************/
+#s-lib-public-header-title {
+	text-align: center;
+	margin: 20px 0;
+}
+.mainSearchForm {
+	margin: 0 auto;
+	width: 90%;
+}
+.mainSearchFormButton {
+	display: block;
+	margin: 0 auto;
+}
+.panel-default {
+	font-size: 14px;
+}
+.s-lg-guide-list a {
+	font-weight: normal;
+	/*font-size: 10px;*/
+}
+.s-lg-index-nav-btn a:hover {
+	border-bottom: none;
+}
+.courseSearchBar {
+	border-radius: 0 !important;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	background-color: #5b6870;
+}
+.nav-pills>li>a, .nav-pills>li>a:focus {
+
+	border: 1px solid #cfcece;
+}
+.nav-pills>li>a:hover {
+	background-color: #f5f4f4;
+}
+.alert-info {
+	color: #5b6870;
+	border-color: #5b6870;
+	background-color: ghostwhite;
+}
+
+/***************************** A-Z LIST ELEMENTS ******************************/
+#s-lg-az-search-bar .navbar-default {
+	background-color: #CCC;
+	margin:-10px 0 10px;
+}
+
+.s-lg-az-result, .s-lg-az-trial {
+	border-bottom: 1px solid #e1e1e1;
+	padding: 10px 0 0 0;
+}
+
+#s-lg-az-cols #col2 {
+	background-color: white;
+	margin-left: -15px;
+	padding-top: 15px;
+}
+
+#s-lg-az-experts-div .s-lib-featured-profile-container {
+	width: 120px;
+}
+
+#s-lg-az-experts-div .s-lib-featured-profile-name {
+	margin-top: 0;
+	padding: 10px;
+	border: 1px solid #9a9a9a;
+	border-top: none;
+	background-color: ghostwhite;
+}
+
+#s-lg-az-cols #s-lg-az-reset {
+	float: right;
+	margin-right: 100px;
+	margin-top: 10px;
+}
+
+.s-lg-az-result-title {
+	margin-right: 0;
+}
+
+#s-lg-az-index span.fa {
+    margin-right: 0;
+}
+.s-lg-icons.pad-left-sm {
+	margin-left: 2px !important;
+}
+
+/****************************** GUIDE ELEMENTS *******************************/
+.nav-tabs li a:hover {
+	outline: none;
+}
+.s-lib-profile-email a {
+	background-color: #FFF;
+	font-size: 14px !important;
+}
+.s-lib-profile-email a:hover, .label-info[href]:focus, .label-info[href]:hover {
+	background-color: #5b6870;
+}
+.s-lg-link-desc {
+	word-wrap: break-word;
+}
+
+/****************************** BACKEND ELEMENTS *******************************/
+.s-lib-box-std .s-lg-edit-link {
+	color: #FFF;
+	text-shadow: none;
+}
+.s-lg-admin-guide-page-nav>ul>li>a {
+	border-bottom: none;
+}
+.close {
+	color: #FFF;
+	text-shadow: none;
+	opacity: 1;
+}
+
+/*************************** SEARCH RESULTS PAGE ******************************/
+#s-lg-srch-local .navbar-default {
+	background-color: transparent;
+	border: none;
+}
+li.s-lg-srch-listing {
+	border-bottom: 3px solid lightgrey !important;
+}
+.s-lg-srch-listing-subj {
+	display: none;
+}
+.s-lg-srch-listing-author {
+	padding-left: 20px;
+}
+.s-lg-srch-listing-author .divider, .s-lg-srch-listing-date .divider {
+	display: none;
+}
+.s-lg-srch-listing-date {
+	float: right;
+}
+
+.s-srch-result {
+  margin: 0px;
+  padding: 20px 0px;
+  border-bottom:1px solid #d6d6d6 !important;
+  position: relative;
+  font-size: 12px; }
+
+/****************************** MEDIA QUERIES *******************************/
+@media only screen and (min-width: 768px) {
+	.navbar-header p {
+		display:none;
+	}
+	.top .logo a,
+	.top .logo a img {
+		width:100%;
+	}
+	.breadcrumb {
+		display: block;
+	}
+	.navbar .container {
+		padding:0px;
+	}
+	#s-lib-public-header-title {
+		margin: 5px 0;
+		text-align: left;
+	}
+	.mainSearchForm {
+		width: auto;
+	}
+	.mainSearchFormButton {
+		display: inline;
+	}
+}
+
+@media print {
+	.navbar, .breadcrumb {
+		display:none !important;
+	}
+	.top .logo a img {
+		width:30%;
+	}
+}

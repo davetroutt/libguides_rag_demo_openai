@@ -1,0 +1,47 @@
+Assessing AI research tools - AI Tools for Research - Research Guides at Temple University
+Skip to Main Content
+University Libraries
+Libraries Research Guides Topic Guides AI Tools for Research Assessing AI research tools
+Search this Guide Search
+AI Tools for Research
+This guide offers advice on AI-powered tools and functionality created for or used in academic research.
+Home Assessing AI research tools Framework for assessing AI research tools For instructors: AI tools assignment Popular chatbots and research AI in library subscriptions Searching literature Mapping literature Summarizing literature AI and evidence synthesis Working with data Writing code Presenting and publishing Get help
+Framework for assessing AI research tools
+Here are suggested questions to ask when assessing the quality of AI tools for research:
+Access
+Do you have access? Is there a cost to use this tool?
+Sources
+How much scholarly information does this tool access? Are its sources comprehensive for your discipline or topic? How does it deal with retracted research? Does it have access to actual data sources?
+Relevancy
+Are the tool's results and recommendations relevant? Do the most relevant items sort to the top of search results?
+Accuracy
+Are summaries, extracted information, and other AI outputs accurate? Are they sufficiently detailed?
+Chatbot
+How well do the conversational features work? Do they show common pitfalls of generative AI chatbots (e.g. vagueness, hallucinations, reliance on biased or limited training data)?
+My Data
+How will my chatbot conversations and personal data be used? Does the tool creator share my values on data security, ethics and privacy?
+Goals
+What am I hoping to learn? Will using this tool help me achieve that goal, or will it undermine my learning? Does this tool introduce more work to double check AI outputs?
+For instructors: AI tools assignment
+AI Tools Report Card
+Instructors may use this customizable activity to empower students to ask and answer critical questions about AI research tools.
+The activity can be delivered in various formats, including:
+In class, on paper
+Online, in breakout rooms
+Asynchronously, as homework
+As a cover sheet for an existing assignment
+Students can complete the full report card on their own, or divide up the criteria to complete as a group.
+This activity is shared with a  Creative Commons CC-BY-NC-SA license  so that instructors are free to use and adapt it to suit their teaching.
+For any questions, or to share an adaptation that worked particularly well, please contact Caitlin Shanley ( cshanley@temple.edu ) and Olivia Given Castello ( olivia.castello@temple.edu ) of Temple University Libraries.
+<<  Previous:  Home Next:  Popular chatbots and research >>
+Last Updated:   Nov 20, 2024 11:41 AM
+URL:   https://guides.temple.edu/ai-research-tools
+Print Page
+Login to LibApps
+Report a broken link or other problem .
+Tags:  AI ,  AI assistants ,  AI coding ,  AI ethics ,  artificial intelligence ,  chatbots ,  ChatGPT ,  digital literacy ,  GenAI ,  generative AI ,  literature mapping ,  literature search ,  Research Assistants ,  research skills ,  research tools ,  semantic search
+Temple University
+University Libraries
+See all library locations
+Library Directory Locations and Directions Frequently Called Numbers
+Need help?  Email us  at asktulibrary@temple.edu

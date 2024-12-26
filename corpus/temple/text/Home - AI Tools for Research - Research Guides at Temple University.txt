@@ -1,0 +1,55 @@
+Home - AI Tools for Research - Research Guides at Temple University
+Skip to Main Content
+University Libraries
+Libraries Research Guides Topic Guides AI Tools for Research Home
+Search this Guide Search
+AI Tools for Research
+This guide offers advice on AI-powered tools and functionality created for or used in academic research.
+Home Assessing AI research tools Popular chatbots and research AI in library subscriptions Searching literature Mapping literature Summarizing literature AI and evidence synthesis Working with data Writing code Presenting and publishing Get help
+Overview
+Temple Libraries is here to support your use of AI-powered features and tools in research and finding information.
+We encourage you to test out the many tools available. Our  AI Tools Report Card  assessment rubric suggests questions to ask when you are evaluating AI-powered research tools.
+The tools recommended on this guide are either free to Temple users or have some significant free usage tier. Other paid-only tools, and free trial tools without meaningful free access, exist but are not listed here.
+SmartSearch database and tool comparison Identify the best places to search based on disciplinary coverage and desired keyword and citation search features. This website is updated regularly with details on major academic databases and tools (including those with AI features) and allows you to build your own custom comparisons. ITHAKA S+R Generative AI Product Tracker From the non-profit higher ed think tank ITHAKA S+R, this Generative AI Product Tracker lists generative AI products that are either marketed specifically towards higher ed faculty or students or are actively used by them for teaching, learning, or research. This list is a living document that is updated regularly. See  this issue brief  for more details.
+Best bets with a free access tier
+Dimensions Research GPT A freely available, tailored version of ChatGPT that is connected to Dimensions data and offers answers based on Open Access publications. Results include references to source material. ProQuest One Academic   This link opens in a new window ProQuest One Academic offers scholarly journals, ebooks, dissertations, news and video content across all disciplines in a unified and seamless user interface. ProQuest's AI-powered Research Assistant appears when a search is initiated from the ProQuest One Academic landing page, or when viewing item record pages in most of the databases within ProQuest Central. See the  PQ Central landing page  for a list of individual databases included. Read more about the AI Research Assistant  on their blog  and  in this FAQ . Research Rabbit Always free, non-profit  citation chasing literature mapping and visualization tool. Searches a very large literature corpus covering >90% of academic databases, plus grey literature. Start with uploaded citations, or link to Zotero citation manager. Clear  FAQ and help documentation . Scispace Multi-functional research assistant tool with a free tier. Includes AI summarizing, information extraction, personalization features, Chrome browser extension, Zotero integration, and other utilities. Literature search draws on a corpus of >150 million items. Writing assistant portion has a freemium model.
+Temple AI course policy
+Students : Temple policy prohibits the use of generative  AI  tools in a class, unless the instructor explicitly grants permission. Temple’s Student Code of Conduct defines unauthorized use of generative AI as academic misconduct (see section C.1.B.5. of the  Student Code of Conduct ). Different instructors may have different rules related to the use of generative AI. Students should read their syllabi carefully to learn what is permitted in a class.
+Ask a Librarian
+Content is loading...
+Email: asktulibrary@temple.edu
+Make an appointment  with a subject librarian or specialist
+See all the ways to contact us
+Request a workshop recording
+Request a past workshop recording Submit this form to request the recording of a past library workshop on Generative AI.
+Related Guides
+Generative AI and Chatbots
+by  Tom Ipri
+Last Updated Oct 17, 2024
+4039 views this year
+Computational Textual Analysis
+by  Alex Wermer-Colan
+Last Updated Aug 11, 2023
+1774 views this year
+"Fake News," Misinformation & Disinformation
+by  Kristina De Voe
+Last Updated Oct 30, 2024
+31052 views this year
+Qualitative Data Analysis and QDA Tools
+by  Olivia Given Castello
+Last Updated Dec 20, 2024
+10085 views this year
+License
+Original work in this LibGuide is licensed under a  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License .
+Next:  Assessing AI research tools >>
+Last Updated:   Nov 20, 2024 11:41 AM
+URL:   https://guides.temple.edu/ai-research-tools
+Print Page
+Login to LibApps
+Report a broken link or other problem .
+Tags:  AI ,  AI assistants ,  AI coding ,  AI ethics ,  artificial intelligence ,  chatbots ,  ChatGPT ,  digital literacy ,  GenAI ,  generative AI ,  literature mapping ,  literature search ,  Research Assistants ,  research skills ,  research tools ,  semantic search
+Temple University
+University Libraries
+See all library locations
+Library Directory Locations and Directions Frequently Called Numbers
+Need help?  Email us  at asktulibrary@temple.edu

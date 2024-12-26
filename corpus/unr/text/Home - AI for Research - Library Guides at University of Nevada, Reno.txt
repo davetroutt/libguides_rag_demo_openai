@@ -1,0 +1,59 @@
+Home - AI for Research - Library Guides at University of Nevada, Reno
+Skip to Main Content
+University Libraries
+University of Nevada, Reno
+Ask a Librarian
+Help
+Skill Guides
+Subject Guides
+Search this Group Search
+AI for Research: Home
+Guidance on generative AI for research, including what generative AI is and how it works, generative AI tools, limitations of generative AI tools for research, tips for prompt generation, and how to cite generative AI
+Home Writing Prompts AI & Source Evaluation AI Research Tools AI & Copyright Citing AI
+What Is Generative AI?
+Artificial intelligence (AI) refers to the ability of computer software to perform advanced reasoning and problem-solving tasks. Generative AI refers to software tools that can create new content such as text, images, audio, and video.
+AI technologies have been around for some time, often operating in the background of many online and smartphone applications. However, the 2022 release of the generative AI tool ChatGPT brought attention to the capabilities of these tools for generating a large amount of high-quality content. ChatGPT is a type of large language model that produces responses by predicting the next word in a sequence on the basis of large amounts of data that it has been "trained" on. This means that its output is based on prediction rather than truth.
+To generate content using ChatGPT or another generative AI application, you need to write a prompt. Sometimes a generative AI application will not give you the content you want, but you can practice  writing prompts  and follow-up requests that will help you use a tool more effectively.
+What kinds of research-related tasks are text-generating AI tools good for?
+If used wisely, text-generating tools like ChatGPT can complement the research process. These tools can be good at:
+generating ideas/brainstorming
+generating keywords, phrases, and concepts for information searching
+summarizing or simplifying large quantities of text
+translating information into other languages
+improving writing through editing, proofreading, and clarifying ideas
+What are the limits of text-generating AI tools for research-related tasks?
+Text-generating AI tools like ChatGPT have limitations for research. Be aware that these tools may:
+make things up (called a “hallucination”)
+refer to information sources that don’t exist
+present false information in an authoritative tone
+reflect current biases found on the internet (e.g., make assumptions about gender, race, etc.)
+be limited in their ability to respond to contemporary events or translate information into less common languages
+To address these limitations, you can use some of the following strategies:
+Double-check the information you get from ChatGPT or a similar tool by confirming it in authoritative sources.
+Use research databases and search engines to find specific sources to cite in academic papers.
+Carefully read sources to gain an in-depth understanding of a topic without relying on AI-generated summaries.
+Also, while generative AI tools can be good at producing generic or formulaic writing (e.g., an email or press release template), they are not good conveying authenticity or uniqueness in writing. Sharing your own original ideas using your own distinctive voice is essential for good writing. If you use generative AI tools in your writing, use them as writing aids rather than substitutes.
+Finally, always check with your professors to determine whether you can use ChatGPT or similar tools for assistance in completing your research assignments.
+Education Librarian
+Ann Medaille
+Email Me
+Book an Appointment
+Contact:   amedaille@unr.edu; Office: MIKC 214K (Knowledge Center, inside the Research Services suite) 775-682-5600   Website
+Subjects:   Anthropology ,  Art ,  Education ,  Human Development & Family Studies ,  Library Science ,  Theatre and Dance
+Humanities Librarian
+Rosalind Bucy
+Email Me
+Book an Appointment
+Contact:   rbucy@unr.edu
+MIKC 214A (775) 682-5098
+Subjects:   English ,  English Composition ,  Gender, Race, and Identity ,  History ,  Music ,  Philosophy & Religion ,  World Languages & Literatures
+Next:  Writing Prompts >>
+University of Nevada, Reno
+1664 N. Virginia Street, Reno 89557
+(775) 784-1110
+Commitment to Diversity
+Commitment to Accessibility
+Equal Opportunity and Title IX
+Employment & Careers
+Privacy
+LibApps Login

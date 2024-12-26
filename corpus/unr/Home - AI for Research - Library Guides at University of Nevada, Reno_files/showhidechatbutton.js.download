@@ -1,0 +1,49 @@
+﻿function checkLibChatStatus() {
+
+    var libchat_isOnline = "#chat-is-online";
+    var libchat_isOffline = "#chat-is-offline";
+
+    $(libchat_isOnline).hide();
+    $(libchat_isOffline).show();
+
+    $.ajax({
+        url: 'https:\/\/cascade2.libchat.com:443/widget_status',
+        dataType: "jsonp",
+        data: { iid: '493', rules: JSON.stringify([{ "u": 0, "d": [1358] }]) },
+        success: function (data) {
+            if (data.u || data.d) {
+                online = true;
+                $(libchat_isOffline).hide();
+                $(libchat_isOnline).show();
+            }
+        },
+        timeout: 10000
+    }).fail(function () {
+        console.log("Chat service unavailable");
+    });
+}
+
+function checkLibChatMobileStatus() {
+
+    var libchatMobile_isOnline = "#chatMobile-is-online";
+    var libchatMobile_isOffline = "#chatMobile-is-offline";
+
+    $(libchatMobile_isOnline).hide();
+    $(libchatMobile_isOffline).show();
+
+    $.ajax({
+        url: 'https:\/\/cascade2.libchat.com:443/widget_status',
+        dataType: "jsonp",
+        data: { iid: '493', rules: JSON.stringify([{ "u": 0, "d": [1358] }]) },
+        success: function (data) {
+            if (data.u || data.d) {
+                online = true;
+                $(libchatMobile_isOffline).hide();
+                $(libchatMobile_isOnline).show();
+            }
+        },
+        timeout: 10000
+    }).fail(function () {
+        console.log("Chat service unavailable");
+    });
+}

@@ -3,7 +3,7 @@
 1. Ensure you have libraries
 ``pip install -r requirements.txt
 ``
-2. Gather HTML
+2. Gather LibGuides HTML by ``\university`` into ``\corpus``
 
 3. Parse HTML to text
 ``python parsehtml.py``

@@ -34,7 +34,7 @@ def main():
     )
 
     # Ask a question (use .invoke or pass a dict to avoid .run)
-    question = "Where did you get those from?"
+    question = "What are some common AI research tools that certain universities use?"
     result = qa_chain({"query": question})  # or qa_chain.invoke({"query": question})
     
     # The default output key is often 'result' or 'answer' depending on chain type
